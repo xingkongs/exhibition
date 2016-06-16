@@ -36,6 +36,10 @@ $('.business-form .btn').click(function () {
         alert('公司网站不能为空');
         return false;
     }
+    if((/^[0-9]{11}$/).test($('.business-form .phone').val())===false){
+        alert('手机格式不正确');
+        return false;
+    }
 
 
 });
