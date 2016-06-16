@@ -23,8 +23,16 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 1.6rem 0;
     font-weight: 500;
 }
-.activity{
-    background: #f5f5f5;
+.active{
+    background: #fafafa;
+}
+.clearfix:after{
+    display:block;
+    content:'';
+    clear:both;
+}
+.clearfix{
+    *zoom:1;
 }
 /*headBg*/
 .headBg {
@@ -70,51 +78,60 @@ h1, h2, h3, h4, h5, h6 {
 nav{
     background: #fff;
 }
-.clearfix:after{
-    display:block;
-    content:'';
-    clear:both;
-}
-.clearfix{
-    *zoom:1;
-}
 nav .logo{float:left;}
 nav ul{float:right;}
+nav .list{
+    float:left;
+}
 .logo img{
     margin:19px;
     vertical-align:middle;
 }
+.nav span{
+    display:inline-block;
+    padding:0 10px
+}
 .nav{
     height:90px;
-
-}
-.nav>li{
-    width:101px;
-    line-height:90px;
-    float:left;
-    font-size:16px;
-    color:#04597b;
-    text-align:center;
-}
-.nav>li:hover{
-    background:#f5f5f5;
-}
-.nav li>ul{
-    display:none;
-    width:120px;
-    text-align:center;
-    margin-right:-19px;
-    line-height:40px;
     position:relative;
 }
-.nav li>ul li{
+.nav .head{
+    height:90px;
+    width:101px;
+    line-height:90px;
+    text-align:center;
+    font-size: 16px;
+    color: #4c4c4c;
+    text-align: center;
+}
+.nav .head:hover{background: #fafafa;}
+.nav ul{
+    visibility: hidden;
+    position:absolute;
+    top:90px;
+    z-index:2;
+
+}
+.list:hover ul li{
+    visibility: visible;
+
+}
+.nav li li{
     height:40px;
-    background: #f5f5f5;
+    line-height:40px;
+    text-align:center;
+    background: #fff;
+    font-size: 14px;
+    color: #4c4c4c;
 }
-.nav li.first{background: #e6e6e6;}
-.nav li:hover>ul{
-    display:block;
+.list ul span{
+    min-width:140px;
 }
+.nav li li:hover{
+    color:#05668d;
+    background:#f8f8f8;
+}
+.nav .last ul{margin-right:-40px;}
 /*main*/
 
 /*container*/
@@ -171,7 +188,7 @@ ul.meeting li{
     max-width:1110px;
     margin:0 auto;
     height:312px;
-    background: #fff;}
+    background: #f5f5f5;}
 .teamwork li{
     display:flex;
     margin-bottom:80px;
@@ -197,6 +214,7 @@ ul.foo .first{
 ul.foo img{
     width:347px;
     height:262px;
+    transition: all 0.5s ease-out;
 }
 main .sidebar p{
     font-size:24px;
@@ -231,6 +249,7 @@ main .sidebar li:hover p{
 main .sidebar li:hover button{
     width:57px;
 }
+main .sidebar li:hover img{box-shadow: 0 0 20px rgba(58, 57, 57, 0.5);}
 /*sidebar restyle*/
 main .restyle{margin-bottom:10px;}
 main .sidebar .restyle p{

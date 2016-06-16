@@ -28,6 +28,8 @@ button{border:none;}
 .clearfix{
     *zoom:1;
 }
+.active{
+    background: #f5f5f5;}
 /*headBg*/
 .headBg {
     background: #f5f5f5;
@@ -83,6 +85,7 @@ nav .list{
 }
 .nav span{
     display:inline-block;
+    padding:0 10px
 }
 .nav{
     height:90px;
@@ -92,19 +95,18 @@ nav .list{
     height:90px;
     width:101px;
     line-height:90px;
-    background: #fafafa;
-
     text-align:center;
     font-size: 16px;
-    color: #04597b;
+    color: #4c4c4c;
     text-align: center;
 }
+.nav .head:hover{background: #fafafa;}
 .nav ul{
     visibility: hidden;
     position:absolute;
     top:90px;
     z-index:2;
-    margin-left:9px;
+    transition: all 0.5s ease-out;
 }
 .list:hover ul li{
     visibility: visible;
@@ -115,13 +117,20 @@ nav .list{
     line-height:40px;
     text-align:center;
     background: #fafafa;
+    font-size: 14px;
+    color: #4c4c4c;
+}
+.list ul span{
+    min-width:140px;
 }
 .nav li li:hover{
+    color:#05668d;
     background:#f8f8f8;
 }
-.nav span{
-    padding:0 10px
-}
+.nav li li:hover .list>ul>span{}
+.nav .last ul{margin-right:-40px;}
+
+
 /*banner*/
 .banner {
     width: 100%;
@@ -205,19 +214,32 @@ main ul button{
     height:72px;
     font-size:20px;
     color:#fff;
+    transition: all 0.5s ease-out;
 }
 main ul button:hover{box-shadow: 0px 1px 6px 3px rgba(135, 129, 129, 0.5);}
 main .first button{
     background: #028090;
 }
+main .first button:hover{
+    box-shadow: 0px 0px 20px rgba(2, 128, 144, 0.6);
+}
 main .second button{
     background: #02c39a;
+}
+main .second button:hover{
+    box-shadow: 0px 0px 20px rgba(2, 195, 145, 0.6);
 }
 main .third button{
     background: #00a896;
 }
+main .third button:hover{
+    box-shadow: 0px 0px 20px rgba(0, 168, 150, 0.6);
+}
 main .fourth button{
     background: #05668d;
+}
+main .fourth button:hover{
+    box-shadow: 0px 0px 20px rgba(5, 102, 141, 0.6);
 }
 /*活动*/
 .activity{

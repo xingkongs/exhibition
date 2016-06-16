@@ -25,6 +25,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 .wraper{
     background: #f5f5f5;}
+.clearfix:after{
+    display:block;
+    content:'';
+    clear:both;
+}
+.clearfix{
+    *zoom:1;
+}
+.active{
+    background: #fafafa;}
 /*headBg*/
 .headBg {
     background:#ededed;
@@ -69,53 +79,60 @@ h1, h2, h3, h4, h5, h6 {
 nav{
     background: #fff;
 }
-.clearfix:after{
-    display:block;
-    content:'';
-    clear:both;
-}
-.clearfix{
-    *zoom:1;
-}
 nav .logo{float:left;}
 nav ul{float:right;}
+nav .list{
+    float:left;
+}
 .logo img{
     margin:19px;
     vertical-align:middle;
 }
+.nav span{
+    display:inline-block;
+    padding:0 10px
+}
 .nav{
     height:90px;
-
-}
-.nav>li{
-    width:101px;
-    line-height:90px;
-    float:left;
-    font-size:16px;
-    color:#04597b;
-    text-align:center;
-}
-.nav>li:hover{
-    background:#f5f5f5;
-}
-.nav li>ul{
-    display:none;
-    width:120px;
-    text-align:center;
-    margin-right:-10px;
-    line-height:40px;
     position:relative;
 }
-.nav li>ul li{
+.nav .head{
+    height:90px;
+    width:101px;
+    line-height:90px;
+    text-align:center;
+    font-size: 16px;
+    color: #4c4c4c;
+    text-align: center;
+}
+.nav .head:hover{background: #fafafa;}
+.nav ul{
+    visibility: hidden;
+    position:absolute;
+    top:90px;
+    z-index:2;
+
+}
+.list:hover ul li{
+    visibility: visible;
+
+}
+.nav li li{
     height:40px;
-    background: #f5f5f5;
+    line-height:40px;
+    text-align:center;
+    background: #fff;
+    font-size: 14px;
+    color: #4c4c4c;
 }
-.nav li.first{background: #e6e6e6;}
-.nav li:hover>ul{
-    display:block;
+.list ul span{
+    min-width:140px;
 }
-.activity{
-    background: #f5f5f5;}
+.nav li li:hover{
+    color:#05668d;
+    background:#f8f8f8;
+}
+.nav .last ul{margin-right:-40px;}
 /*main*/
 /*container*/
 main{
@@ -157,10 +174,9 @@ main h4{
     color:#666;
 }
 main h3{
-    font-size:18px;
-    line-height:40px;
-    color:#666;
-    margin:0;
+    font-size: 16px;
+    color: #666;
+    margin: 16px 0;
 }
 /*sidebar*/
 main .sidebar{
@@ -169,6 +185,7 @@ main .sidebar{
 main .sidebar img{
     width:348px;
     height:262px;
+    transition: all 0.5s ease-out;
 }
 main .sidebar p{
     font-size:24px;
@@ -176,13 +193,13 @@ main .sidebar p{
     text-align:center;
     color:#333;
     position:relative;
-    transition:all 1s;
+    transition:all 1s ease-out;
 }
 main .sidebar button{
     width:0;
     border-bottom:2px solid #b3d0dc;
     vertical-align: bottom;
-    transition:all 0.5s;
+    transition:all 0.5s ease-out;
 }
 .sidebar .left{
    position:absolute;
@@ -206,6 +223,7 @@ main .sidebar li:hover button{
 
 
 }
+main .sidebar li:hover img{box-shadow: 0 0 20px rgba(58, 57, 57, 0.5);}
 /*form*/
 form input[type="text"]{
     border: 1px solid #ccc;
@@ -223,13 +241,16 @@ form [type="text"]:focus {
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 5px rgba(59, 180, 242, .3);
 }
 form .btn{
-    width: 120px;
+    width: 158.5px;
     height: 40px;
     background: #05668d;
     color: #fff;
     margin-top: 25px;
     border: none;
     font-size: 18px;
+}
+form .btn:hover{
+    background:rgba(5, 102, 141, 0.8);
 }
 form input[type="radio"]{
     display:inline-block;
