@@ -140,10 +140,46 @@ nav .list{
     background-color: #000;
     margin: 0 auto;
 }
-.banner img {
-    width: 100%;
+.pic_con{width:100%;}
+.banner .img1 {
+
     display: block;
     height: 400px;
+    text-align:center;
+    background: url(../images/7.pic_hd.jpg) no-repeat;
+    background-position: center;
+}
+.banner .img2 {
+
+    display: block;
+    height: 400px;
+    text-align:center;
+    background: url(../images/8.pic_hd.jpg) no-repeat;
+    background-position: center;
+}
+.banner .img3 {
+
+    display: block;
+    height: 400px;
+    text-align:center;
+    background: url(../images/9.pic_hd.jpg) no-repeat;
+    background-position: center;
+}
+.banner .img4 {
+
+    display: block;
+    height: 400px;
+    text-align:center;
+    background: url(../images/10.pic_hd.jpg) no-repeat;
+    background-position: center;
+}
+.banner .img5 {
+
+    display: block;
+    height: 400px;
+    text-align:center;
+    background: url(../images/11.pic_hd.jpg) no-repeat;
+    background-position: center;
 }
 .banner .num {
     font-size: 14px;
