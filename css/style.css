@@ -120,10 +120,11 @@ nav .list{
     font-size: 14px;
     color: #4c4c4c;
 }
+.nav li li a{color: #4c4c4c;}
 .list ul span{
     min-width:140px;
 }
-.nav li li:hover{
+.nav li li:hover a{
     color:#05668d;
     background:#f8f8f8;
 }
@@ -146,40 +147,35 @@ nav .list{
     display: block;
     height: 400px;
     text-align:center;
-    background: url(../images/7.pic_hd.jpg) no-repeat;
-    background-position: center;
+    background: url(../images/7.pic_hd.jpg) no-repeat center;
 }
 .banner .img2 {
 
     display: block;
     height: 400px;
     text-align:center;
-    background: url(../images/8.pic_hd.jpg) no-repeat;
-    background-position: center;
+    background: url(../images/8.pic_hd.jpg) no-repeat center;
 }
 .banner .img3 {
 
     display: block;
     height: 400px;
     text-align:center;
-    background: url(../images/9.pic_hd.jpg) no-repeat;
-    background-position: center;
+    background: url(../images/9.pic_hd.jpg) no-repeat center;
 }
 .banner .img4 {
 
     display: block;
     height: 400px;
     text-align:center;
-    background: url(../images/10.pic_hd.jpg) no-repeat;
-    background-position: center;
+    background: url(../images/10.pic_hd.jpg) no-repeat center;
 }
 .banner .img5 {
 
     display: block;
     height: 400px;
     text-align:center;
-    background: url(../images/11.pic_hd.jpg) no-repeat;
-    background-position: center;
+    background: url(../images/11.pic_hd.jpg) no-repeat center;
 }
 .banner .num {
     font-size: 14px;

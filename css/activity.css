@@ -110,7 +110,7 @@ nav .list{
     position:absolute;
     top:90px;
     z-index:2;
-
+    transition: all 0.5s ease-out;
 }
 .list:hover ul li{
     visibility: visible;
@@ -120,18 +120,21 @@ nav .list{
     height:40px;
     line-height:40px;
     text-align:center;
-    background: #fff;
+    background: #fafafa;
     font-size: 14px;
     color: #4c4c4c;
 }
+.nav li li a{color: #4c4c4c;}
 .list ul span{
     min-width:140px;
 }
-.nav li li:hover{
+.nav li li:hover a{
     color:#05668d;
     background:#f8f8f8;
 }
+.nav li li:hover .list>ul>span{}
 .nav .last ul{margin-right:-40px;}
+
 /*main*/
 
 /*container*/
