@@ -289,14 +289,14 @@ main .third button{
 }
 main .third button:hover{
     box-shadow: 0px 0px 20px rgba(0, 168, 150, 0.6);
-    background-color: rgba(0, 168, 150, 0.8);
+    background-color: rgba(0, 168, 150, 0.6);
 }
 main .fourth button{
     background: #05668d;
 }
 main .fourth button:hover{
     box-shadow: 0px 0px 20px rgba(5, 102, 141, 0.6);
-    background-color: rgba(5, 102, 141, 0.8);
+    background-color: rgba(5, 102, 141, 0.6);
 }
 /*活动*/
 .activity{
@@ -431,34 +431,54 @@ li.content2 p{
 /*.news .head:hover{*/
     /*color:#000;*/
 /*}*/
-.blank3 p{
+.blank5 p{
+    margin-top:40px;
     margin-bottom:56px;
     text-align:center;
     font-size:18px;
     color:#05668d;
 
 }
+
 /*展位图*/
 .export{
-    background: #ebebeb;
+    height:490px;
+    padding:47.5px 0;
+
     text-align:center;
     margin-bottom:48px;
+    display:flex;
 }
-.export .img{
+.active{display:list-item;}
+.wraper2{ background: #f9f9f9;}
+.export .select{flex:162;}
+.export .content2{flex:948px;}
+.export img{
+    margin:0 54px 0 50px;
+}
+.content2 li{display:none;}
+.select{padding:111px 0;}
+.select li{
+
     display:inline-block;
-    width:857px;
-    height:416px;
-    background: #ebebeb;
-    vertical-align:middle;
-    background: url(../images/展位图.png) no-repeat center;
+    margin:18px 0;
 }
-.export span.text{
+.select span{
+    margin:36px 0;
+    font-size:24px;
+    color:#808080;
+}
+.select span:hover{
+    color:#48a5b1;
+}
+.export i{
     display:inline-block;
-    font-size:30px;
-    color:#333;
-    width:200px;
-    text-align:center;
+    width:22px;
+    height:20px;
+    margin-left:22px;
+    background:url(../images/Playbutton.png);
 }
+
 /*合作伙伴*/
 .wraped2{
     background: #fff;}

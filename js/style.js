@@ -13,4 +13,16 @@
 })()
 
 
+$(".select li").hover(function() {
 
+    $('.content2 li:eq(' + $(this).index() + ')').removeAttr("style").show().siblings().hide();
+});
+
+$(".blank5 p").click(function(){
+    $(".new-s .hidden").removeClass("hidden").addClass("cur");
+});
+
+// $(".car_tab a").hover(function() {
+//     $(this).addClass("cur").siblings().removeClass("cur");
+//     $('.car_tabcon .car_sc:eq(' + $(this).index() + ')').removeAttr("style").show().siblings().hide();
+// });
