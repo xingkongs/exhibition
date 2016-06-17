@@ -1,6 +1,10 @@
 *{margin:0;padding:0;box-sizing:border-box;}
 a{text-decoration:none;}
 ul,li{list-style: none;}
+ul{
+    margin: 0 !important;
+    padding: 0 !important;
+}
 body{
     font-family: PingFangSC Regular, Hiragino Sans GB, 'Microsoft Yahei', Arial, Helvetica, sans-serif;
     background: #fff;
@@ -21,7 +25,7 @@ button{border:none;}
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 0 0 1.6rem 0;
-    font-weight: 500;
+    font-weight: 500!important;
 }
 .active{
     background: #fafafa;
@@ -79,7 +83,7 @@ nav{
     background: #fff;
 }
 nav .logo{float:left;}
-nav ul{float:right;}
+nav ul{float:right;margin:0;}
 nav .list{
     float:left;
 	position:relative;
@@ -112,7 +116,7 @@ nav .list{
     top:90px;
 	left:-17px;
     z-index:2;
-    transition: all 0.5s ease-out;
+
 }
 .list:hover ul li{
     visibility: visible;
@@ -211,7 +215,7 @@ ul.meeting li{
 .sidebar ul.foo{
     display:flex;
 }
-ul.foo li{
+ul.foo>li{
     flex:1;
     margin-left:34px;
 }
@@ -256,7 +260,21 @@ main .sidebar li:hover p{
 main .sidebar li:hover button{
     width:57px;
 }
-main .sidebar li:hover img{box-shadow: 0 0 20px rgba(58, 57, 57, 0.5);}
+main .sidebar li:hover .img,main .sidebar li:hover img{box-shadow: 0 0 20px rgba(58, 57, 57, 0.5);}
+main .sidebar .img{
+    width:348px;
+    height:262px;
+    transition: all 0.5s ease-out;
+}
+/*控制点 re*/
+.am-slider-default .am-control-nav {
+    width: 100%;
+    position: absolute;
+    bottom: 20px!important;
+    text-align: center;}
+.am-slider-default {
+    margin: 0 !important;
+}
 /*sidebar restyle*/
 main .restyle{margin-bottom:10px;}
 main .sidebar .restyle p{
@@ -268,11 +286,11 @@ main .sidebar .restyle p{
 main .restyle li:hover p{
     color:#333;
 }
-main .re{margin-top:0;}
+main .re{margin-top:0;margin-bottom:17px;}
 
 
 /*footer*/
-footer{background: #ededed;padding-bottom: 1px;color:#333;}
+footer{background: #ededed;padding-bottom: 1px;color:#333;margin-top: -17px;}
 footer span{display:inline-block;margin:45px 16px;}
 span.contact{
 
@@ -298,7 +316,7 @@ span.contact2{
 .blank4{
     height:1px;
     background:#d8e1e4;
-    margin:30px 0;
+    margin-bottom:30px;
 }
 .copyright{
     margin:28px;

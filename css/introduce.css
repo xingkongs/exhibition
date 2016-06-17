@@ -1,6 +1,10 @@
 *{margin:0;padding:0;box-sizing:border-box;}
 a{text-decoration:none;}
 ul,li{list-style: none;}
+ul{
+    margin: 0 !important;
+    padding: 0 !important;
+}
 body{
     font-family: PingFangSC Regular, Hiragino Sans GB, 'Microsoft Yahei', Arial, Helvetica, sans-serif;
     background: #fff;
@@ -17,7 +21,7 @@ button{border:none;}
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 0 0 1.6rem 0;
-    font-weight: 500;
+    font-weight: 500!important;
 }
 .wraped{
     width:1110px;
@@ -80,7 +84,7 @@ nav{
     background: #fff;
 }
 nav .logo{float:left;}
-nav ul{float:right;}
+nav ul{float:right;margin:0;}
 nav .list{
     float:left;
 	position:relative;
@@ -113,7 +117,7 @@ nav .list{
     top:90px;
 	left:-17px;
     z-index:2;
-    transition: all 0.5s ease-out;
+
 }
 .list:hover ul li{
     visibility: visible;
@@ -144,7 +148,7 @@ nav .list{
 /*container*/
 main{
     background: #f5f5f5;
-    display:flex;
+    display:flex!important;
     font-size:16px;
 }
 main .container{
@@ -188,6 +192,11 @@ main h3{
 main .sidebar{
     margin-left:20px;
 }
+main .sidebar .img{
+    width:348px;
+    height:262px;
+    transition: all 0.5s ease-out;
+}
 main .sidebar img{
     width:348px;
     height:262px;
@@ -229,14 +238,23 @@ main .sidebar li:hover button{
 
 
 }
-main .sidebar li:hover img{box-shadow: 0 0 20px rgba(58, 57, 57, 0.5);}
+main .sidebar li:hover .img,main .sidebar li:hover img{box-shadow: 0 0 20px rgba(58, 57, 57, 0.5);}
+/*控制点 re*/
+.am-slider-default .am-control-nav {
+    width: 100%;
+    position: absolute;
+    bottom: 20px!important;
+    text-align: center;}
+.am-slider-default {
+    margin: 0 !important;
+}
 /*form*/
 form input[type="text"]{
     border: 1px solid #ccc;
     width: 317px;
     height: 40px;
     color: #666;
-    font-size:25px;
+    font-size:16px;
     padding:0 10px;
 }
 form [type="text"]:focus {
@@ -264,6 +282,7 @@ form input[type="radio"]{
     height:16px;
     margin:0 10px 0 3px;
 }
+form i{color:red;}
 /*program*/
 main .list1{
     display:flex;
@@ -336,7 +355,7 @@ table td span {
     opacity:0;
     transition:all 1s;
 }
-.foo3,.sidebar2>ul{display:flex;}
+.foo3,.sidebar2>ul{display:flex;position:relative;}
 .foo3 .sidebar1{
     flex:1;
     background: #05668d;
@@ -346,12 +365,27 @@ table td span {
     background: #028090;}
 .foo3 .sidebar2{flex:3;}
 .sidebar2 li:hover img{
-    opacity:0.9;
+    opacity:0.6;
 }
 .sidebar2 li{
     flex:1;
-
+    text-align: center;
+    margin-bottom: -1px;
 }
+.sidebar2 li span{
+    visibility: hidden;
+    display: inline-block;
+    width: 33.3%;
+    position: absolute;
+    top: 45%;
+    color: #fff!important;
+    font-size: 15px;
+    z-index:3;
+}
+.sidebar2 li:hover span{
+    visibility: visible;
+    color:#fff;
+    }
 .sidebar2 li.pic1{background: url(../images/kaifa1.jpg) no-repeat;}
 .sidebar2 li.pic2{background: url(../images/kaifa2.jpg) no-repeat;}
 .sidebar2 li.pic3{background: url(../images/kaifa3.jpg) no-repeat;}
@@ -393,7 +427,7 @@ span.contact2{
 .blank4{
     height:1px;
     background:#d8e1e4;
-    margin:30px 0;
+    margin-bottom:30px;
 }
 .copyright{
     margin:28px;

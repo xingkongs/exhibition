@@ -1,6 +1,8 @@
 *{margin:0;padding:0;box-sizing:border-box;}
 a{text-decoration:none;}
 ul,li{list-style: none;}
+ul{
+    margin: 0 !important;}
 body{
     font-family: PingFangSC Regular, Hiragino Sans GB, 'Microsoft Yahei', Arial, Helvetica, sans-serif;
     background: #fff;
@@ -17,7 +19,7 @@ button{border:none;}
 }
 .wraped{
     width:1110px;
-    margin:0 auto;
+    margin:0 auto!important;
     padding-top:1px;
 }
 .clearfix:after{
@@ -198,7 +200,7 @@ nav .list{
     display: inline-block;
     overflow: hidden;
     background: #fff;
-    margin-right: 6px;
+    margin: 10px 6px 10px 0;
     cursor: pointer;
     border-radius: 50%;
     -moz-border-radius: 50%;
@@ -207,9 +209,25 @@ nav .list{
     color: #fff;
     opacity: 0.6;
 }
+.banner .num ul:hover li{
+    padding:2.5px 0;
+    border-radius:0;
+    -moz-border-radius:0;
+    -webkit-border-radius:0;
+
+}
+/*.banner .num ul:hover li.on{*/
+    /*padding:2.5px 0;*/
+    /*border-radius:0;*/
+    /*-moz-border-radius:0;*/
+    /*-webkit-border-radius:0;*/
+    /*background: #005aff;*/
+/*}*/
 .banner .num li.on {
     border-color:#005aff;
+    background: #005aff;
 }
+
 .banner .prev,.banner .next {
     display: none;
     width: 40px;
@@ -257,28 +275,32 @@ main .first button{
 }
 main .first button:hover{
     box-shadow: 0px 0px 20px rgba(2, 128, 144, 0.6);
+    background-color:rgba(2, 128, 144, 0.8) ;
 }
 main .second button{
     background: #02c39a;
 }
 main .second button:hover{
     box-shadow: 0px 0px 20px rgba(2, 195, 145, 0.6);
+    background-color: rgba(2, 195, 145, 0.8);
 }
 main .third button{
     background: #00a896;
 }
 main .third button:hover{
     box-shadow: 0px 0px 20px rgba(0, 168, 150, 0.6);
+    background-color: rgba(0, 168, 150, 0.8);
 }
 main .fourth button{
     background: #05668d;
 }
 main .fourth button:hover{
     box-shadow: 0px 0px 20px rgba(5, 102, 141, 0.6);
+    background-color: rgba(5, 102, 141, 0.8);
 }
 /*活动*/
 .activity{
-    margin-top:64px;
+    padding-top:64px;
 
 }
 .activity img{
@@ -481,8 +503,8 @@ span.contact2{
 }
 .blank4{
     height:1px;
-    background:#dfe8ec;
-    margin:30px 0;
+    background:#d8e1e4;
+    margin-bottom:30px;
 }
 .copyright{
     margin:28px;

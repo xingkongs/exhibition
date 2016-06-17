@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>meeting</title>
+    <title>参加展会-第一电动网</title>
+    <meta name="keywords" content="参加展会">
+    <meta name="description" content="第二届全球新能源汽车大会（上海）交易展览会参加展会.">
     <link rel="stylesheet" href="../css/introduce.css">
+    <link rel="stylesheet" href="http://cdn.amazeui.org/amazeui/2.7.0/css/amazeui.min.css">
+
 </head>
 <body>
 <div class="headBg">
@@ -52,7 +56,7 @@
             <li class="list active"><span class="head">观众服务</span>
                 <ul>
                     <li class="first"><a href="../audiences/signIn.html"><span>观展注册</span></a></li>
-                    <li><a href="../audiences/meeting.html"><span>参加会议</span></a></li>
+                    <li><a href="../audiences/meeting.html"><span>参加展会</span></a></li>
                     <li><a href="../audiences/place.html"><span>活动地点</span></a></li>
                 </ul>
             </li>
@@ -80,21 +84,21 @@
 <div class="wraper">
     <main class="wraped">
         <div class="container">
-            <div class="head1"><a href="../jiaoyi.html">首页</a> | <a href="">观众服务</a> | <a href=""><h1>参加会议</h1></a></div>
+            <div class="head1"><a href="../jiaoyi.html">首页</a> | <a href="">观众服务</a> | <a href=""><h1>参加展会</h1></a></div>
             <div class="item show">
                 <div class="main-cont businessman">
                     <form class="business-form" action="http://www.d1ev.com/index.php?g=contents&m=jiaoyihui&a=canhui" method="post">
                         <ul>
                             <p>2016GNEV EXPO同期有丰富的会议可供您选择，为了您能有更好的观展和参会体验，希望您填写完整的报名信息：</p>
                             <li>
-                                <h3>姓名：</h3>
-                                <input type="text" name="realname" class="realname">
+                                <h3><i>*</i> 姓名：</h3>
+                                <input type="text" name="realname" class="realname" placeholder="必填">
                             </li>
                             <li>
-                                <h3>请问您想参加以下哪些会议：</h3>
-                                <p><input type="radio" name="meeting-name" id="" value="2016未来汽车开发者开发者大会">2016未来汽车开发者开发者大会 <input type="radio" name="meeting-name" id="" value="买家团集团采购会">买家团集团采购会 <input type="radio" name="meeting-name" id="" value="供应链采配会">供应链采配会</p>
-                                <h3>请问您为何想参加会议：</h3>
-                                <p><input type="radio" name="reason" id="" value="我要申请成为演讲嘉宾">我要申请成为演讲嘉宾<input type="radio" name="reason" id="" value="我有整车采购需求">我有整车采购需求<input type="radio" name="reason" id="" value="我有零部件采购需求">我有零部件采购需求<input type="radio" name="reason" id="" value="我想成为整车供应商">我想成为整车供应商<input type="radio" name="reason" id="" value="我想成为零部件供应商">我想成为零部件供应商<input type="radio" name="reason" id="" value="其他">其他</p>
+                                <h3>请问您想参加以下哪些活动：</h3>
+                                <p><input type="radio" name="meeting-name" id="" value="2016未来汽车开发者开发者大会">2016未来汽车开发者开发者大会 <input type="radio" name="meeting-name" id="" value="买家团集团采购会">买家团集团采购会 <input type="radio" name="meeting-name" id="" value="供应链采配会">供应链采配会<input type="radio" name="meeting-name" id="" value="供应链采配会">采购节</p>
+                                <h3>请问您为何想参加展会：</h3>
+                                <p><input type="radio" name="reason" id="" value="我要申请成为演讲嘉宾">我要申请成为演讲嘉宾<input type="radio" name="reason" id="" value="我有整车采购需求">我有整车采购需求<input type="radio" name="reason" id="" value="我有零部件采购需求">我有零部件采购需求<input type="radio" name="reason" id="" value="我想成为整车供应商">我想成为整车供应商<input type="radio" name="reason" id="" value="我想成为零部件供应商">我想成为零部件供应商<input type="radio" name="reason" id="" value="供应链采配会">我想购买新能源汽车<input type="radio" name="reason" id="" value="其他">其他</p>
 
                             </li>
                             <li>
@@ -102,8 +106,8 @@
                                 <input type="text" name="email" class="email">
                             </li>
                             <li>
-                                <h3>电话：</h3>
-                                <input type="text" name="tel" class="phone">
+                                <h3><i>*</i> 电话：</h3>
+                                <input type="text" name="tel" class="phone" placeholder="必填">
                             </li>
                             <li>
                                 <h3>公司：</h3>
@@ -129,17 +133,23 @@
         <div class="sidebar" style="margin-top:167px;">
             <ul>
                 <li>
-                    <img src="../images/news1.jpg" alt="">
+                    <div class="img am-slider am-slider-default" data-am-flexslider="{directionNav: false}" id="demo-slider-0" style="display:inline-block;width:348px;">
+                        <ul class="am-slides">
+                            <li><a href="../introduce/activity.html"><img src="../images/news1.jpg" /></a></li>
+                            <li><a href="../introduce/activity.html"><img src="../images/news2.jpg" /></a></li>
+                            <li><a href="../introduce/activity.html"><img src="../images/news3.jpg" /></a></li>
+                        </ul>
+                    </div>
                     <p><button class="left"></button>特色活动<button class="right"></button></p>
                 </li>
                 <li>
-                    <img src="../images/news2.jpg" alt="">
-                    <p><button class="left"></button>为何参展<button class="right"></button></p>
+                    <a href="signIn.html"><img src="../images/观展注册.jpg" alt=""></a>
+                    <p><button class="left"></button>观展注册<button class="right"></button></p>
 
                 </li>
                 <li>
-                    <img src="../images/news3.jpg" alt="">
-                    <p><button class="left"></button>展会简介<button class="right"></button></p>
+                    <a href="place.html"><img src="../images/活动地点.jpg" alt=""></a>
+                    <p><button class="left"></button>活动地点<button class="right"></button></p>
 
                 </li>
             </ul>
@@ -174,5 +184,29 @@
 
     </div>
 </footer>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://cdn.amazeui.org/amazeui/2.7.0/js/amazeui.min.js"></script>
+<script src="http://cdn.amazeui.org/amazeui/2.7.0/js/amazeui.ie8polyfill.min.js"></script>
+<script src="http://cdn.amazeui.org/amazeui/2.7.0/js/amazeui.widgets.helper.min.js"></script>
+
+
+<script>
+    $('.business-form .btn').click(function () {
+
+        if ($('.business-form .realname').val()=='') {
+            alert('姓名不能为空');
+            return false;
+        }
+        if($('.business-form .phone').val()===""){
+            alert('手机不能为空');
+            return false;
+        }
+        if((/^[0-9]{11}$/).test($('.business-form .phone').val())===false){
+            alert('手机格式不正确');
+            return false;
+        }
+    });
+
+</script>
 </body>
 </html>

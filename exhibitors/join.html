@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>join</title>
+    <title>展商报名-第一电动网</title>
+    <meta name="keywords" content="展商报名">
+    <meta name="description" content="第二届全球新能源汽车大会（上海）交易展览会展商报名.">
     <link rel="stylesheet" href="../css/introduce.css">
+    <link rel="stylesheet" href="http://cdn.amazeui.org/amazeui/2.7.0/css/amazeui.min.css">
+
 </head>
 <body>
 <div class="headBg">
@@ -52,7 +56,7 @@
             <li class="list"><span class="head">观众服务</span>
                 <ul>
                     <li class="first"><a href="../audiences/signIn.html"><span>观展注册</span></a></li>
-                    <li><a href="../audiences/meeting.html"><span>参加会议</span></a></li>
+                    <li><a href="../audiences/meeting.html"><span>参加展会</span></a></li>
                     <li><a href="../audiences/place.html"><span>活动地点</span></a></li>
                 </ul>
             </li>
@@ -87,36 +91,36 @@
                             <ul>
 
                                 <li>
-                                    <h3>姓名：</h3>
-                                    <input type="text" name="realname" class="realname">
+                                    <h3><i>*</i> 姓名：</h3>
+                                    <input type="text" name="realname" class="realname" placeholder="必填">
                                 </li>
                                 <li>
-                                    <h3>邮箱：</h3>
-                                    <input type="text" name="email" class="email">
+                                    <h3><i>*</i> 邮箱：</h3>
+                                    <input type="text" name="email" class="email" placeholder="必填">
                                 </li>
                                 <li>
-                                    <h3>电话：</h3>
-                                    <input type="text" name="tel" class="phone">
+                                    <h3><i>*</i> 电话：</h3>
+                                    <input type="text" name="tel" class="phone" placeholder="必填">
                                 </li>
                                 <li>
-                                    <h3>公司：</h3>
-                                    <input type="text" name="company" class="company">
+                                    <h3><i>*</i> 公司：</h3>
+                                    <input type="text" name="company" class="company" placeholder="必填">
                                 </li>
                                 <li>
-                                    <h3>职位：</h3>
-                                    <input type="text" name="job" class="job">
+                                    <h3><i>*</i> 职位：</h3>
+                                    <input type="text" name="job" class="job" placeholder="必填">
                                 </li>
                                 <li>
-                                    <h3>展示的产品或服务：</h3>
-                                    <input type="text" name="product" class="product">
+                                    <h3><i>*</i> 展示的产品或服务：</h3>
+                                    <input type="text" name="product" class="product" placeholder="必填">
                                 </li>
                                 <li>
-                                    <h3>所需展位大小（最小9平方米）：</h3>
-                                    <input type="text" name="area" class="area">
+                                    <h3><i>*</i> 所需展位大小（最小9平方米）：</h3>
+                                    <input type="text" name="area" class="area" placeholder="必填">
                                 </li>
                                 <li>
-                                    <h3>公司网站：</h3>
-                                    <input type="text" name="url" class="">
+                                    <h3><i>*</i> 公司网站：</h3>
+                                    <input type="text" name="url" class="" placeholder="必填">
                                 </li>
                                 <li>
                                     <h3></h3>
@@ -133,17 +137,28 @@
         <div class="sidebar" style="margin-top:167px;">
             <ul>
                 <li>
-                    <img src="../images/news1.jpg" alt="">
+                    <div class="img am-slider am-slider-default" data-am-flexslider="{directionNav: false}" id="demo-slider-0" style="display:inline-block;width:348px;">
+                        <ul class="am-slides">
+                            <li><a href="../introduce/activity.html"><img src="../images/news1.jpg" /></a></li>
+                            <li><a href="../introduce/activity.html"><img src="../images/news2.jpg" /></a></li>
+                            <li><a href="../introduce/activity.html"><img src="../images/news3.jpg" /></a></li>
+                        </ul>
+                    </div>
                     <p><button class="left"></button>特色活动<button class="right"></button></p>
                 </li>
                 <li>
-                    <img src="../images/news2.jpg" alt="">
-                    <p><button class="left"></button>为何参展<button class="right"></button></p>
+                    <a href="program.html"><img src="../images/参展程序.jpg" alt=""></a>
+                    <p><button class="left"></button>参展程序<button class="right"></button></p>
 
                 </li>
                 <li>
-                    <img src="../images/news3.jpg" alt="">
-                    <p><button class="left"></button>展会简介<button class="right"></button></p>
+                    <a href="range.html"><img src="../images/参展范围.jpg" alt=""></a>
+                    <p><button class="left"></button>参展范围<button class="right"></button></p>
+
+                </li>
+                <li>
+                    <a href="cost.html"><img src="../images/收费标准.jpg" alt=""></a>
+                    <p><button class="left"></button>收费标准<button class="right"></button></p>
 
                 </li>
             </ul>
@@ -180,5 +195,10 @@
 </footer>
 <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="../js/sign.js"></script>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://cdn.amazeui.org/amazeui/2.7.0/js/amazeui.min.js"></script>
+<script src="http://cdn.amazeui.org/amazeui/2.7.0/js/amazeui.ie8polyfill.min.js"></script>
+<script src="http://cdn.amazeui.org/amazeui/2.7.0/js/amazeui.widgets.helper.min.js"></script>
+
 </body>
 </html>
