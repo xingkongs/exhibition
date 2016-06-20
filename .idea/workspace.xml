@@ -1,83 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e3d07db-523e-4808-b6be-d287cc52f55a" name="Default" comment="change js&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Playbutton.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/activity1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/activity2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/activity3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/btn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/cover1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/cover2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kaifa1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kaifa11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kaifa12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kaifa13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kaifa14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kaifa15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kaifa16.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kaifa2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kaifa3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kaifa4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kaifa5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kaifa6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/为何参展.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/关于GNEV.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/关于第一电动网.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/参加会议.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/参展商名录.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/参展报名.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/参展程序.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/参展范围.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/合作媒体名单.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/地理位置.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/媒体报名.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/展会日程.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/展会简介.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/展位规划效果图.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/展位赞助咨询.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/展馆位置.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/开发者大会简介 .jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/开发者计划官网.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/开发者项目报名.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/往届GNEV.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/往届开发者大会.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/往届报道.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/收费标准.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/活动地点.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/观展注册.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/长江EV.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jiaoyi.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/signin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DevelopersConference/profile.html" afterPath="$PROJECT_DIR$/DevelopersConference/profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about/aboutD1EV.html" afterPath="$PROJECT_DIR$/about/aboutD1EV.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about/aboutGNEV.html" afterPath="$PROJECT_DIR$/about/aboutGNEV.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about/preDevelopersConference.html" afterPath="$PROJECT_DIR$/about/preDevelopersConference.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about/previouslyMeeting.html" afterPath="$PROJECT_DIR$/about/previouslyMeeting.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/audiences/meeting.html" afterPath="$PROJECT_DIR$/audiences/meeting.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/audiences/place.html" afterPath="$PROJECT_DIR$/audiences/place.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/audiences/signIn.html" afterPath="$PROJECT_DIR$/audiences/signIn.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exhibitors/cost.html" afterPath="$PROJECT_DIR$/exhibitors/cost.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exhibitors/join.html" afterPath="$PROJECT_DIR$/exhibitors/join.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exhibitors/program.html" afterPath="$PROJECT_DIR$/exhibitors/program.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exhibitors/range.html" afterPath="$PROJECT_DIR$/exhibitors/range.html" />
+    <list default="true" id="8e3d07db-523e-4808-b6be-d287cc52f55a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/introduce/activity.html" afterPath="$PROJECT_DIR$/introduce/activity.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/introduce/consult.html" afterPath="$PROJECT_DIR$/introduce/consult.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/introduce/exhibitors.html" afterPath="$PROJECT_DIR$/introduce/exhibitors.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/introduce/introduce.html" afterPath="$PROJECT_DIR$/introduce/introduce.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/introduce/reason.html" afterPath="$PROJECT_DIR$/introduce/reason.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/introduce/schedule.html" afterPath="$PROJECT_DIR$/introduce/schedule.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/sign.js" afterPath="$PROJECT_DIR$/js/sign.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/style.js" afterPath="$PROJECT_DIR$/js/style.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/media/MediaRegistration.html" afterPath="$PROJECT_DIR$/media/MediaRegistration.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/media/mediaPartners.html" afterPath="$PROJECT_DIR$/media/mediaPartners.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/media/previouslyReport.html" afterPath="$PROJECT_DIR$/media/previouslyReport.html" />
     </list>
     <ignored path="jiaoyi.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -405,20 +331,15 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="354" column="7" selection-start-line="354" selection-start-column="7" selection-end-line="354" selection-end-column="7" />
+            <state relative-caret-position="257">
+              <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
               <folding>
-                <element signature="n#html#0;n#!!top" expanded="false" />
                 <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#li#1;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#ul#0;n#li#1;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#li#2;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -671,8 +592,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -791,6 +710,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -923,7 +844,8 @@
       <workItem from="1466394053021" duration="1584000" />
       <workItem from="1466406642205" duration="1717000" />
       <workItem from="1466408466207" duration="59000" />
-      <workItem from="1466408534902" duration="111000" />
+      <workItem from="1466408534902" duration="120000" />
+      <workItem from="1466408665886" duration="42000" />
     </task>
     <task id="LOCAL-00001" summary="slides and pages completed">
       <created>1465954527452</created>
@@ -1079,26 +1001,33 @@
       <option name="project" value="LOCAL" />
       <updated>1466395693476</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="change js&#10;">
+      <created>1466408652998</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1466408652998</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164357000" />
+    <option name="totallyTimeSpent" value="164408000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="7" width="1932" height="1048" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20376344" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20645161" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995495" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995495" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995495" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995495" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1750,20 +1679,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="354" column="7" selection-start-line="354" selection-start-column="7" selection-end-line="354" selection-end-column="7" />
+        <state relative-caret-position="257">
+          <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
           <folding>
-            <element signature="n#html#0;n#!!top" expanded="false" />
             <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#1;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#ul#0;n#li#1;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#2;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
