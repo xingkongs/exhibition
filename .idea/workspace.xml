@@ -331,8 +331,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+            <state relative-caret-position="689">
+              <caret line="355" column="7" selection-start-line="355" selection-start-column="7" selection-end-line="355" selection-end-column="7" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -455,8 +455,8 @@
       <file leaf-file-name="style.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/style.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="754">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state relative-caret-position="806">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -845,7 +845,7 @@
       <workItem from="1466406642205" duration="1717000" />
       <workItem from="1466408466207" duration="59000" />
       <workItem from="1466408534902" duration="120000" />
-      <workItem from="1466408665886" duration="42000" />
+      <workItem from="1466408665886" duration="1042000" />
     </task>
     <task id="LOCAL-00001" summary="slides and pages completed">
       <created>1465954527452</created>
@@ -1008,11 +1008,18 @@
       <option name="project" value="LOCAL" />
       <updated>1466408652998</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="link">
+      <created>1466408716909</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1466408716909</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164408000" />
+    <option name="totallyTimeSpent" value="165408000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="7" width="1932" height="1048" extended-state="0" />
@@ -1073,7 +1080,8 @@
     <MESSAGE value="change nav" />
     <MESSAGE value="add tongji" />
     <MESSAGE value="change js&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="change js&#10;" />
+    <MESSAGE value="link" />
+    <option name="LAST_COMMIT_MESSAGE" value="link" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1254,7 +1262,7 @@
       </provider>
     </entry>
     <entry file="file://E:/demo.html" />
-    <entry file="file://$PROJECT_DIR$/js/signin.js">
+    <entry file="file://$PROJECT_DIR$/js/signIn.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
@@ -1649,14 +1657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/style.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/sign.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
@@ -1677,10 +1677,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/style.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="806">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+        <state relative-caret-position="689">
+          <caret line="355" column="7" selection-start-line="355" selection-start-column="7" selection-end-line="355" selection-end-column="7" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
