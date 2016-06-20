@@ -359,7 +359,7 @@ main .fourth button:hover{
 }
 /*新闻报道*/
 .new-s{margin-bottom:92px;}
-.new-s .hidden{display:none;}
+.hidden{display:none;}
 .news img{
     width:276px;
     height:186px;
@@ -439,7 +439,7 @@ li.content2 p{
     color:#05668d;
 
 }
-
+.cur{transform:rotate(180deg);}
 /*展位图*/
 .export{
     height:490px;

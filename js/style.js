@@ -18,8 +18,13 @@ $(".select li").hover(function() {
     $('.content2 li:eq(' + $(this).index() + ')').removeAttr("style").show().siblings().hide();
 });
 
-$(".blank5 p").click(function(){
-    $(".new-s .hidden").removeClass("hidden").addClass("cur");
+$(".blank5 p").on("click",function(){
+    $(".new-s .hidden").removeClass("hidden");
+    $(this).find('.cur1').css("opacity",0)
+});
+$(".blank2 p").on("click",function(){
+    $(".parter .hidden").removeClass("hidden");
+    $(this).find('.cur1').css("opacity",0)
 });
 
 // $(".car_tab a").hover(function() {
