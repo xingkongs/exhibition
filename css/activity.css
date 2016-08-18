@@ -20,7 +20,7 @@ button{border:none;}
     justify-content: center;
 }
 .wraped{
-    width:1110px;
+    max-width:1110px;
     margin:0 auto;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -55,24 +55,25 @@ h1, h2, h3, h4, h5, h6 {
 .head .left:before {
     content: '';
     display: inline-block;
-    width: 13px;
-    height: 13px;
-    background:url(../images/icon1.png) no-repeat ;
+    width: 16px;
+    height: 16px;
+    background: url(../images/icon1.png) no-repeat;
     background-size: cover;
     position: relative;
     top: 2px;
+    left: -6px;
 }
 .head .sign {
     padding: 0 5px 0 0;
     display: inline-block;
 }
 .head .sign i {
-    width: 13px;
+    width: 16px;
     height: 16px;
     display: inline-block;
-    background:url(../images/icon2.png) no-repeat -1px 0;
+    background: url(../images/icon2.png) no-repeat 0 0;
     position: relative;
-    top: 4px;
+    top: 2px;
     left: -6px;
 }
 .head .register {
@@ -94,7 +95,7 @@ nav .list{
 }
 .nav span{
     display:inline-block;
-    
+
 }
 .nav{
     height:90px;
@@ -114,19 +115,22 @@ nav .list{
     visibility: hidden;
     position:absolute;
     top:90px;
-	left:-17px;
-    z-index:2;
-
+    left:-17px;
+    opacity: 0.2;
+    transform: translateY(-20px);
+    transition: transform 0.5s,opacity 0.5s;
 }
-.list:hover ul li{
+.list:hover ul{
     visibility: visible;
-	background:#fff;
+    transform: translateY(0px);
+    opacity: 1;
+
 }
 .nav li li{
     height:40px;
     line-height:40px;
     text-align:center;
-    background: #fafafa;
+    background:#fff;
     font-size: 14px;
     color: #4c4c4c;
 }
@@ -138,7 +142,7 @@ nav .list{
 .nav li li:hover{background:#f8f8f8;}
 .nav li li:hover a{
     color:#05668d;
-    
+
 }
 .nav li li:hover .list>ul>span{}
 .nav .last ul{margin-right:-40px;}
@@ -181,17 +185,31 @@ main .head1 h1{
     color:#666;
     font-size:14px;
 }
-/*meeting*/
-ul.meeting{
-    display:flex;
+/*活动*/
+.activity{
+    padding-top:64px;
+
 }
-ul.meeting li{
-    flex:1;
-    text-align:justify;
-    margin-left:20px;
+.activity--re{padding-top:0;}
+.activity img{
+    width:360px;
+    height:248px;
 }
-.meeting li.first{
-    margin-left:0;}
+.activity p{
+    max-width:325px;
+    margin:0 auto;
+    inline-block:24px;
+}
+.activity li{
+    float:left;
+    margin-left:15px;
+}
+.activity li.first{
+    margin-left:0;
+}
+.activity li p.head--re{font-size:29px;margin-top:36px;text-align:center;}
+.activity li p.head--re:hover{color:#05668d;}
+.activity li p.contact1{padding-top:25px;padding-bottom:48px;color:#333;text-align: justify;}
 /*合作伙伴*/
 .wraped2{
     background: #fff;}
@@ -199,18 +217,20 @@ ul.meeting li{
     max-width:1110px;
     margin:0 auto;
     height:312px;
-    background: #f5f5f5;}
+    background: #f5f5f5;
+	}
 .teamwork li{
     display:flex;
-    margin-bottom:80px;
+    margin-bottom:40px;
 }
 .teamwork li>span{flex:1;}
 .teamwork img{
-    height:92px;
-    width:100%;
+    height:76px;
+    width:82%;
 }
 /*sidebar*/
 .sidebar{margin-top:92px;}
+.sidebar--re{margin-top:0;}
 .sidebar ul.foo{
     display:flex;
 }
@@ -298,7 +318,7 @@ span.contact{
     top:-4px;
 }
 .contact p{font-size:24px;margin-bottom: 20px;}
-.contact1 p,.contact2 p{font-size:16px;line-height:30px;}
+.contact1 p,.contact2 p{font-size:16px;line-height:30px;margin:0;}
 .contact img{
     width:81px;
     height:21px;
@@ -323,4 +343,8 @@ span.contact2{
 footer .copyright p{
     text-align:center;
     padding:6px 0;
+	margin:0;
 }
+.copyright a{color:#333;}
+.blank5{height:50px;
+    background: #f5f5f5;}

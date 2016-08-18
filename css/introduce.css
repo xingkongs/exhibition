@@ -23,8 +23,12 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 1.6rem 0;
     font-weight: 500!important;
 }
+*+address, *+blockquote, *+dl, *+fieldset, *+figure, *+hr, *+ol, *+p, *+pre, *+ul {
+    margin-top: 0!important;
+}
+
 .wraped{
-    width:1110px;
+    max-width:1110px;
     margin:0 auto;
 }
 .wraper{
@@ -56,24 +60,25 @@ h1, h2, h3, h4, h5, h6 {
 .head .left:before {
     content: '';
     display: inline-block;
-    width: 13px;
-    height: 13px;
-    background:url(../images/icon1.png) no-repeat ;
+    width: 16px;
+    height: 16px;
+    background: url(../images/icon1.png) no-repeat;
     background-size: cover;
     position: relative;
     top: 2px;
+    left: -6px;
 }
 .head .sign {
     padding: 0 5px 0 0;
     display: inline-block;
 }
 .head .sign i {
-    width: 13px;
+    width: 16px;
     height: 16px;
     display: inline-block;
-    background:url(../images/icon2.png) no-repeat -1px 0;
+    background: url(../images/icon2.png) no-repeat 0 0;
     position: relative;
-    top: 4px;
+    top: 2px;
     left: -6px;
 }
 .head .register {
@@ -87,7 +92,7 @@ nav .logo{float:left;}
 nav ul{float:right;margin:0;}
 nav .list{
     float:left;
-	position:relative;
+    position:relative;
 }
 .logo img{
     margin:19px;
@@ -95,7 +100,7 @@ nav .list{
 }
 .nav span{
     display:inline-block;
-    
+
 }
 .nav{
     height:90px;
@@ -115,31 +120,34 @@ nav .list{
     visibility: hidden;
     position:absolute;
     top:90px;
-	left:-17px;
-    z-index:2;
-
+    left:-17px;
+    opacity: 0.2;
+    transform: translateY(-20px);
+    transition: transform 0.5s,opacity 0.5s;
 }
-.list:hover ul li{
+.list:hover ul{
     visibility: visible;
-    background:#fff;
+    transform: translateY(0px);
+    opacity: 1;
+
 }
 .nav li li{
     height:40px;
     line-height:40px;
     text-align:center;
-    background: #fafafa;
+    background:#fff;
     font-size: 14px;
     color: #4c4c4c;
 }
 .nav li li a{color: #4c4c4c;}
 .list ul span{
     min-width:140px;
-	padding:0 10px
+    padding:0 10px
 }
 .nav li li:hover{background:#f8f8f8;}
 .nav li li:hover a{
     color:#05668d;
-    
+
 }
 .nav li li:hover .list>ul>span{}
 .nav .last ul{margin-right:-40px;}
@@ -171,7 +179,7 @@ main .head1 h1{
 main .container p{
     font-size:16px;
     color:#666;
-    line-height:24px;
+    line-height:28px;
     margin-bottom:32px;
 }
 main h2{
@@ -302,13 +310,13 @@ main .list1{
     height:36px;
     font-size:18px;
     color:#fff;
-    margin-bottom:43px;
+    margin-bottom:51.5px;
     z-index: 2;
 
 }
 .list1 .line{
      width:1px;
-     height:350px;
+     height:380px;
      background: -webkit-linear-gradient(top,#659fb7 , #05668d);
  }
 .list1 .first{
@@ -410,7 +418,7 @@ span.contact{
     top:-4px;
 }
 .contact p{font-size:24px;margin-bottom: 20px;}
-.contact1 p,.contact2 p{font-size:16px;line-height:30px;}
+.contact1 p,.contact2 p{font-size:16px;line-height:30px;margin:0;}
 .contact img{
     width:81px;
     height:21px;
@@ -435,4 +443,6 @@ span.contact2{
 footer .copyright p{
     text-align:center;
     padding:6px 0;
+	margin:0;
 }
+.copyright a{color:#333;}
