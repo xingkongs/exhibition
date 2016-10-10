@@ -4,7 +4,6 @@
     <list default="true" id="8e3d07db-523e-4808-b6be-d287cc52f55a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index_mobile.html" afterPath="$PROJECT_DIR$/index_mobile.html" />
     </list>
     <ignored path="jiaoyi.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index_mobile.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index_mobile.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index_mobile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
+            <state relative-caret-position="608">
               <caret line="756" column="7" selection-start-line="756" selection-start-column="7" selection-end-line="756" selection-end-column="7" />
               <folding>
                 <element signature="n#meta#2;n#head#0;n#html#0;n#!!top" expanded="false" />
@@ -222,11 +221,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="641">
-              <caret line="442" column="7" selection-start-line="442" selection-start-column="7" selection-end-line="442" selection-end-column="7" />
+            <state relative-caret-position="381">
+              <caret line="432" column="36" selection-start-line="432" selection-start-column="36" selection-end-line="432" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -605,7 +604,8 @@
       <workItem from="1467943046825" duration="257000" />
       <workItem from="1472817691381" duration="173000" />
       <workItem from="1473210276212" duration="260000" />
-      <workItem from="1473643027491" duration="123000" />
+      <workItem from="1473643027491" duration="250000" />
+      <workItem from="1476093268287" duration="5000" />
     </task>
     <task id="LOCAL-00001" summary="slides and pages completed">
       <created>1465954527452</created>
@@ -796,18 +796,25 @@
       <option name="project" value="LOCAL" />
       <updated>1472817808193</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="change npmcdn to unpkg.com">
+      <created>1473643169752</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1473643169752</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="313909000" />
+    <option name="totallyTimeSpent" value="314041000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1932" height="1048" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295699" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19429494" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.196986" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.79841447" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -856,7 +863,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="change nav and sidebar" />
     <MESSAGE value="add form query" />
     <MESSAGE value="add nav link toper signin icon" />
     <MESSAGE value="check jiaoyi.html link" />
@@ -881,7 +887,8 @@
     <MESSAGE value="script signIn" />
     <MESSAGE value="more" />
     <MESSAGE value="chenge active button   add  b label" />
-    <option name="LAST_COMMIT_MESSAGE" value="chenge active button   add  b label" />
+    <MESSAGE value="change npmcdn to unpkg.com" />
+    <option name="LAST_COMMIT_MESSAGE" value="change npmcdn to unpkg.com" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1189,17 +1196,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
-          <caret line="442" column="7" selection-start-line="442" selection-start-column="7" selection-end-line="442" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index_mobile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
+        <state relative-caret-position="608">
           <caret line="756" column="7" selection-start-line="756" selection-start-column="7" selection-end-line="756" selection-end-column="7" />
           <folding>
             <element signature="n#meta#2;n#head#0;n#html#0;n#!!top" expanded="false" />
@@ -1390,6 +1389,14 @@
             <element signature="n#script#0;n#div#15;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#script#1;n#div#15;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="432" column="36" selection-start-line="432" selection-start-column="36" selection-end-line="432" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
