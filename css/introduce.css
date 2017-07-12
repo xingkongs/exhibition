@@ -412,8 +412,7 @@ table td span {
 footer{background: #ededed;padding-bottom: 1px;color:#333;}
 footer span{display:inline-block;margin:45px 16px;}
 span.contact{
-
-    width:342px;
+    width:240px;
     position:relative;
     top:-4px;
 }
@@ -425,11 +424,9 @@ span.contact{
     margin-right:20px;
 }
 span.contact1{
-
-    width:335px;
+    width:240px;
 }
 span.contact2{
-
     width:325px;
 }
 .blank4{

@@ -352,9 +352,16 @@ main .fourth button:hover{
     margin-bottom:10px;
     outline:1px solid #fff;
 }
-.parter li>ul{max-width:1080px;margin:0 auto;}
+.parter li>ul{
+    /*max-width:1080px;*/
+    margin:0 auto;
+    overflow: hidden;
+}
 .parter li li{
-    display:inline-block;
+    /*display: inline-block;*/
+    float: left;
+    width: 180px;
+    margin-right: 3px;
 }
 .parter p{
     text-align:center;
@@ -449,7 +456,9 @@ li.content2 p{
     /*color:#000;*/
 /*}*/
 .blank5{
-    background: #f5f5f5;}
+    background: #f5f5f5;
+    text-align:center;
+}
 .blank5 p{
     width:50px;
     margin:40px auto 56px;
@@ -457,6 +466,10 @@ li.content2 p{
     font-size:18px;
     color:#05668d;
 
+}
+.blank5 a{
+    display: inline-block;
+    margin: 40px auto 56px;
 }
 .cur{transform:rotate(180deg);}
 /*展位图*/
@@ -519,9 +532,8 @@ li.content2 p{
 }
 /*footer*/
 footer{background: #f5f5f5;padding-bottom: 1px;color:#333;}
-footer span{display:inline-block;margin:45px 16px;}
-span.contact{
-
+footer .contact,footer .contact1,footer .contact2{display:inline-block;margin:45px 16px;}
+.contact{
     width:342px;
     position:relative;
     top:-4px;
@@ -533,11 +545,10 @@ span.contact{
     height:21px;
     margin-right:20px;
 }
-span.contact1{
-
+.contact1{
     width:335px;
 }
-span.contact2{
+.contact2{
 
     width:325px;
 }
