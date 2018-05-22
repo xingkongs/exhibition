@@ -1,0 +1,183 @@
+img{
+    border:none;
+}
+.developer .logo_title img{
+    max-height: 80px;
+}
+.developer .description{
+    font-size: 13px;
+    color:#000;
+    line-height:1.6;
+    margin-bottom:67px;
+}
+.developer li{
+    width:160px;
+    height:147px;
+    position: relative;
+    margin-right:3%;
+    background: #ededed;
+    margin-bottom:40px;
+    transition: background-color 1s ease;
+}
+.developer li:nth-of-type(2n+2){
+    margin-right: 0;
+}
+.developer li a>img{
+    position: absolute;
+    left:0;
+    bottom:0;
+    width: 100%;
+    min-height:170px;
+    border:none;
+    transition: width 1s ease;
+    user-select: none;
+}
+.developer li:hover a>img{
+    will-change: width;
+    width:110%;
+    left:0;
+}
+
+.developer li .tip{
+    width:54px;
+    height:16px;
+    position: absolute;
+    right:-1px;
+    bottom:-1px;
+    background:url("../../images/block3.png");
+    background-size: contain;
+}
+.developer li .introduce{
+    position: absolute;
+    width:60px;
+    top:15px;
+    right:0;
+    color:#ff28a4;
+    font-family: fangzheng01;
+    transition: color 1s ease;
+}
+.developer li .introduce .division{
+    width: 16px;
+    height:3px;
+    margin-left:5px;
+    margin-bottom:20px;
+    background: #ff28a4;
+}
+.developer li:hover{
+    background: #fd29a4;
+}
+.developer li:hover .introduce{
+    color:#fff;
+}
+.developer li:hover .introduce .division{
+    background:#fff;
+}
+.developer li .introduce .name{
+    font-size:18px;
+    margin-bottom:8px;
+}
+.developer li .introduce .position{
+    font-size:11px;
+    line-height:1.2;
+}
+
+.agenda_list{
+    font-family: fangzheng01;
+    padding-top:30px;
+    border-left:3px solid #ededed;
+}
+.agenda_list li{
+    position: relative;
+    padding-left: 22.5px;
+}
+.agenda_list li:before{
+    content:'';
+    display: block;
+    position: absolute;
+    left: -11px;
+    top:0;
+    width:19px;
+    height:19px;
+    background: #fd29a4;
+    border-radius: 50%;
+}
+.agenda_list li:after{
+    content:'';
+    display: block;
+    position: absolute;
+    left: -6px;
+    top: 5px;
+    width:10px;
+    height:10px;
+    background: #00efd1;
+    border-radius: 50%;
+}
+.agenda_list .data{
+    display:inline-block;
+    width:110px;
+    line-height:24px;
+    font-size:18px;
+    text-align: center;
+    background: #5a28fe;
+    color:#fff;
+    position: relative;
+}
+.agenda_list li.data:after{
+    content:'';
+    display: block;
+    position: absolute;
+    right:-20px;
+    top:14px;
+    border:10px solid transparent;
+    border-left-color:#5a28fe;
+}
+.agenda_list li.data:after{
+    content:'';
+    display: block;
+    position: absolute;
+    left:-20px;
+    top:14px;
+    border:10px solid transparent;
+    border-right-color:#5a28fe;
+}
+.agenda_list .time{
+    display:inline-block;
+    font-size:13px;
+    margin:15px auto 10px;
+    text-align: center;
+    color:#ff28a4;
+}
+.agenda_list p{
+    font-size:15px;
+    line-height:1.6;
+    margin-bottom:16px;
+}
+.agenda_list p a{
+    color:#000;
+}
+.concurrentEvents{
+    margin-bottom:35px;
+}
+.concurrent_wrapper{
+    max-width: 750px;
+    margin:0 auto;
+}
+.concurrentEvents .evnentsList li{
+    float:left;
+    margin: 0 4.55% 4.55% 0;
+}
+.concurrentEvents .evnentsList li:nth-of-type(2n+2){
+    margin-right:0;
+}
+.concurrentEvents .evnentsList li:nth-of-type(n+3){
+    margin-bottom:0;
+}
+.concurrentEvents .evnentsList img{
+    width: 157px;
+    height: 105px;
+
+}
+.concurrentEvents .evnentsList img:hover,.concurrentEvents .evnentsList img:focus{
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1), 0 32px 32px rgba(0, 0, 0, 0.15), 0 64px 64px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease-in-out;
+}

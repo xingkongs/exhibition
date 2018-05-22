@@ -1,0 +1,188 @@
+.register .logo_title{
+    padding:110px 0 90px;
+}
+.timeAndPlace .logo_title img,.register .logo_title img{
+    max-height:90px;
+    margin-left:-45px;
+}
+.timeAndPlace .img--wrapper img{
+    width:727px;
+    height:365px;
+    margin-left:83px;
+}
+.timeAndPlace .img--wrapper img:hover{
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1), 0 32px 32px rgba(0, 0, 0, 0.15), 0 64px 64px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.timeAndPlace .content_info,.timeAndPlace .content_map{
+    float:left;
+    font-family:fangzheng01;
+}
+.timeAndPlace .content_info .title{
+    font-size:36px;
+    color:#fd29a4;
+}
+.timeAndPlace .content_info .division {
+    width: 64px;
+    height: 6px;
+    background: #ededed;
+    margin: 50px 0;
+}
+.timeAndPlace .content_info .info{
+    font-size:24px;
+    color:#1a1a1a;
+    line-height:1.2;
+    margin:30px auto 50px;
+}
+.timeAndPlace .content_info .info:last-of-type{
+    font-family: "axisextra_bold";
+    font-weight:bold;
+}
+
+.timeAndPlace .partners{
+    margin-bottom:100px;
+}
+.timeAndPlace .logo_title{
+    margin:120px auto 80px;
+}
+.timeAndPlace .logo_title img{
+    max-height:90px;
+    margin-left:-45px;
+}
+
+.register label{
+    display: block;
+}
+
+.transportation .logo_title{
+    margin:110px auto 90px;
+}
+.transportation .logo_title img{
+    max-height:128px;
+    margin-left:-45px;
+}
+.transportation p.title{
+    font-family:fangzheng01;
+    font-size:36px;
+    color:#fd29a4;
+    margin-bottom:30px;
+}
+.transportation p.description{
+    font-size:18px;
+    line-height:1.6;
+    color:#000;
+    margin-bottom:60px;
+}
+.transportation p.description span{
+    color:#fd29a4;
+}
+.transportation .division{
+    height:6px;
+    background: #ededed;
+    margin:70px auto;
+}
+.transportation p.tip{
+    font-size:18px;
+    font-weight:bold;
+    color:#fd29a4;
+    margin-bottom:25px;
+}
+.transportation .table--wrapper .img--wrapper{
+    height:369px;
+    background: url("../images/xieyijiudian.png") no-repeat;
+    background-size: contain;
+}
+.transportation p.table_tip{
+    font-size:14px;
+    line-height:1.57;
+    color:#000;
+    margin-top:20px;
+}
+.transportation p.info{
+    font-size:18px;
+    line-height:2.1;
+    color:#333;
+    margin:50px auto 130px;
+}
+
+
+.am-form-group{
+    margin-bottom:0;
+}
+.register form label{
+    display: inline-block;
+    font-size:20px;
+    font-weight: normal;
+    line-height:48px;
+    margin-bottom:40px;
+    position: relative;
+}
+.register form label span:not(.tip){
+    display: inline-block;
+    vertical-align: top;
+    color:#fd29a4;
+    width:12px;
+    height:12px;
+    text-align: center;
+    margin-right:15px;
+}
+.register form label .tip{
+    display: none;
+    width: 150px;
+    position: absolute;
+    right:-30%;
+    top: 0;
+    color:#dd514c;
+    text-align: left;
+    user-select: none;
+}
+.register form label input[type=text]{
+    display: inline-block;
+    width:480px;
+    height:48px;
+    font-size:20px;
+    padding:14px 20px;
+    margin-left:40px;
+    border:1px solid #666;
+
+}
+.register form label input[type=text]:focus{
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 5px rgb(253, 41, 164);
+    border:1px solid #fd29a4;
+    outline:none;
+}
+.register form .am-form-error input[type=text]{
+     box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 5px #eda4a2;
+     border:1px solid #dd514c;
+     outline:none;
+ }
+.register form .am-form-error .tip{
+    display: inline-block;
+}
+.register form button{
+    width:240px;
+    line-height:60px;
+    background: #fd29a4;
+    border:none;
+    font-size:24px;
+    color:#fff;
+    font-weight:bold;
+    margin-left:132px;
+    transition: background-color 0.2s ease-in;
+}
+.register form button:hover {
+    background: #af1d71;
+}
+.register form button:focus{
+    outline: 1px solid #fd29a4;
+}
+
+@media (max-width:1000px) {
+    main{
+        max-width:98%;
+        margin:0 auto;
+    }
+    .timeAndPlace .img--wrapper img{
+        margin-left: 40px;
+    }
+}

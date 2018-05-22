@@ -1,0 +1,179 @@
+.exhibiter .logo_title{
+    margin:120px auto 90px;
+}
+.exhibiter .logo_title img{
+    max-height:90px;
+    margin-left:-45px;
+}
+.exhibiter p.title{
+    font-family:fangzheng01;
+    font-size:48px;
+    color:#fd29a4;
+    line-height:38px;
+    margin-top:90px;
+}
+.exhibiter p.title span{
+    font-size:24px;
+}
+.exhibiter p.price{
+    font-family: fangzheng01;
+    font-size:28px;
+    color:#5a28ff;
+    margin:16px auto 30px;
+    line-height:1.35;
+}
+.exhibiter p.price span{
+    color:#808080;
+}
+.exhibiter p.description{
+    font-size:18px;
+    color:#000;
+    line-height:1.78;
+}
+.exhibiter_button{
+    margin-top:70px;
+}
+.exhibiter_button .button{
+    display: inline-block;
+    width:160px;
+    line-height:48px;
+    color:#fff;
+    background: #fd29a4;
+    text-align: center;
+    cursor: pointer;
+    margin-right:20px;
+    transition: background-color 0.2s ease-in;
+}
+.exhibiter_button a:last-of-type .button{
+    background: #5a28ff;
+}
+.exhibiter_button a:first-of-type:hover .button{
+    background: #ae1d71;
+}
+.exhibiter_button a:last-of-type:hover .button{
+    background: #2e328e;
+}
+.exhibiter .division{
+    height:6px;
+    background: #ededed;
+    margin:70px auto;
+}
+
+
+.am-form-group{
+    margin-bottom:0;
+    line-height: 48px;
+}
+.exhibiter form label{
+    display: inline-block;
+    font-weight: normal;
+    line-height:48px;
+    margin-bottom:40px;
+    position: relative;
+}
+.exhibiter form label>span:not(.tip):not(.am-ucheck-icons),.exhibiter .form_radio>span{
+    display: inline-block;
+    vertical-align: top;
+    color:#fd29a4;
+    width:12px;
+    height:12px;
+    text-align: center;
+    margin-right:15px;
+}
+.exhibiter form label .tip{
+    display: none;
+    width: 150px;
+    position: absolute;
+    right:-30%;
+    top: 0;
+    color:#dd514c;
+    text-align: left;
+    user-select: none;
+}
+.exhibiter form label input[type=text]{
+    display: inline-block;
+    width:480px;
+    height:48px;
+    font-size:20px;
+    padding:14px 20px;
+    margin-left:40px;
+    border:1px solid #666;
+
+}
+.exhibiter form label input[type=text]:focus{
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 5px rgb(253, 41, 164);
+    border:1px solid #fd29a4;
+    outline:none;
+}
+.exhibiter form .am-form-error input[type=text]{
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 5px #eda4a2;
+    border:1px solid #dd514c;
+    outline:none;
+}
+.exhibiter form .am-form-error .tip{
+    display: inline-block;
+}
+.exhibiter form button{
+    width:240px;
+    line-height:60px;
+    background: #fd29a4;
+    border:none;
+    font-size:24px;
+    color:#fff;
+    font-weight:bold;
+    margin-left:115px;
+    transition: background-color 0.2s ease-in;
+}
+.exhibiter form button:hover {
+    background: #af1d71;
+}
+.exhibiter form button:focus{
+    outline: 1px solid #fd29a4;
+}
+.exhibiter .form_radio{
+    margin-bottom:40px;
+}
+.exhibiter .form_radio label{
+    margin-bottom:0;
+}
+.exhibiter .form_radio label:first-of-type{
+    margin-left:40px;
+    margin-right:80px;
+}
+.exhibiter .am-ucheck-icons{
+    top:13px;
+}
+
+
+.contectUs{
+    margin-bottom:130px;
+}
+.contectUs li{
+    float:left;
+    width:32%;
+}
+.contectUs li:last-of-type{
+    float:left;
+    width:35%;
+}
+.contectUs_title{
+    font-family: fangzheng01;
+    font-size:20px;
+    color:#fd29a4;
+    margin-bottom:50px;
+}
+.contectUs_info{
+    font-size:18px;
+    line-height:2;
+    color:#333;
+}
+
+@media (max-width:1000px) {
+    main{
+        max-width:98%;
+        margin:0 auto;
+    }
+    .timeAndPlace .img--wrapper img{
+        margin-left: 40px;
+    }
+}

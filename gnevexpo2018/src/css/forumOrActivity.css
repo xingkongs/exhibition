@@ -1,0 +1,242 @@
+img{
+    border:none;
+}
+.developer .logo_title{
+    margin:120px auto 50px;
+}
+.developer .logo_title img,.agenda .logo_title img{
+    max-height:91.5px;
+    margin-left:-45px;
+}
+.developer .description{
+    font-size: 18px;
+    color:#000;
+    line-height:1.56;
+    margin-bottom:90px;
+}
+
+.developer li{
+    float:left;
+    width:232px;
+    height:212px;
+    position: relative;
+    margin-right:25px;
+    margin-bottom:54px;
+    background: #ededed;
+    transition: background-color 1s ease;
+}
+.developer li:nth-of-type(4n+4){
+    margin-right:0;
+}
+.developer li a>img{
+    position: absolute;
+    left:0;
+    bottom:0;
+    width: 100%;
+    border:none;
+    transition: width 1s ease;
+    user-select: none;
+}
+.developer li:hover a>img{
+    will-change: width;
+    width:110%;
+    left:0;
+}
+
+.developer li .tip{
+    width:54px;
+    height:16px;
+    position: absolute;
+    right:-1px;
+    bottom:-1px;
+    background:url("../images/block3.png");
+    background-size: contain;
+}
+.developer li .introduce{
+    position: absolute;
+    width:87px;
+    top:20px;
+    right:0;
+    color:#fd29a4;
+    font-family: fangzheng01;
+    transition: color 1s ease;
+}
+.developer li .introduce .division{
+    width: 25px;
+    height:5px;
+    margin-left:5px;
+    margin-bottom:20px;
+    background: #fd29a4;
+    transition: background 1s ease;
+}
+.developer li:hover{
+    background: #fd29a4;
+}
+.developer li:hover .introduce{
+    color:#fff;
+}
+.developer li:hover .introduce .division{
+    background:#fff;
+}
+.developer li .introduce .name{
+    font-size:24px;
+    margin-bottom:8px;
+}
+.developer li .introduce .position{
+    font-size:14px;
+    line-height:1.2;
+}
+
+.agenda .logo_title{
+    margin:66px auto 70px;
+}
+.agenda_list{
+    font-family: fangzheng01;
+    width:50%;
+    padding-top:30px;
+    border-right:6px solid #ededed;
+}
+.agenda_list li{
+    position: relative;
+    max-height:168px;
+}
+.agenda_list li:nth-of-type(odd){
+    text-align: right;
+    padding-right:45px;
+}
+.agenda_list li:nth-of-type(even){
+    padding-left:45px;
+    right:-503px;
+}
+.agenda_list li:nth-of-type(odd):before{
+    content:'';
+    display: block;
+    position: absolute;
+    right: -21px;
+    top:0;
+    width:38px;
+    height:38px;
+    background: #fd29a4;
+    border-radius: 50%;
+}
+.agenda_list li:nth-of-type(odd):after{
+    content:'';
+    display: block;
+    position: absolute;
+    right: -15px;
+    top: 6px;
+    width:26px;
+    height:26px;
+    background: #00efd1;
+    border-radius: 50%;
+}
+.agenda_list li:nth-of-type(even):before{
+    content:'';
+    display: block;
+    position: absolute;
+    left: -21px;
+    top:0;
+    width:38px;
+    height:38px;
+    background: #fd29a4;
+    border-radius: 50%;
+}
+.agenda_list li:nth-of-type(even):after{
+    content:'';
+    display: block;
+    position: absolute;
+    left: -15px;
+    top: 6px;
+    width:26px;
+    height:26px;
+    background: #00efd1;
+    border-radius: 50%;
+}
+.agenda_list .data{
+    display:inline-block;
+    width:208px;
+    line-height:48px;
+    font-size:36px;
+    text-align: center;
+    background: #5a28fe;
+    color:#fff;
+    position: relative;
+}
+.agenda_list li:nth-of-type(odd) .data:after{
+    content:'';
+    display: block;
+    position: absolute;
+    right:-20px;
+    top:14px;
+    border:10px solid transparent;
+    border-left-color:#5a28fe;
+}
+.agenda_list li:nth-of-type(even) .data:after{
+    content:'';
+    display: block;
+    position: absolute;
+    left:-20px;
+    top:14px;
+    border:10px solid transparent;
+    border-right-color:#5a28fe;
+}
+.agenda_list .time{
+    display:inline-block;
+    font-size:24px;
+    margin:16px auto 5px;
+    text-align: center;
+    color:#ff28a4;
+}
+.agenda_list p{
+    font-size:30px;
+    line-height:1.2;
+}
+.agenda_list p a{
+    color:#000;
+}
+.agenda_list p a:hover {
+    color: #fd29a4;
+}
+.concurrentEvents{
+    margin-bottom:130px;
+}
+.concurrentEvents .logo_title{
+    padding:120px 0 70px;
+}
+.concurrentEvents .logo_title img{
+    max-height:130px;
+    margin-left:-45px;
+}
+.concurrent_wrapper{
+    max-width: 750px;
+    margin:0 auto;
+}
+.concurrentEvents .evnentsList li{
+    float:left;
+    margin:0 25px 25px 0;
+}
+.concurrentEvents .evnentsList li:nth-of-type(2n+2){
+    margin-right:0;
+}
+.concurrentEvents .evnentsList li:nth-of-type(n+2){
+    margin-bottom:0;
+}
+.concurrentEvents .evnentsList img{
+    width:362px;
+    height:240px;
+
+}
+.concurrentEvents .evnentsList img:hover,.concurrentEvents .evnentsList img:focus{
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1), 0 32px 32px rgba(0, 0, 0, 0.15), 0 64px 64px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+@media (max-width:1000px) {
+    main{
+        max-width:98%;
+        margin:0 auto;
+    }
+    .developer li{
+        margin-right: 10px;
+    }
+}
