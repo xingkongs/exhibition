@@ -226,7 +226,7 @@ body{
     line-height:1.6;
 }
 .developer li{
-    width:160px;
+    width:47.95%;
     height:147px;
     position: relative;
     margin-right:3%;
@@ -252,6 +252,7 @@ body{
     left:0;
     bottom:0;
     width: 100%;
+    max-width:160px;
     transition: width 1s ease;
 }
 .developer li:hover a>img{
@@ -323,7 +324,8 @@ body{
     border:1px solid #00f0d0;
 }
 .events ul>li img{
-    width:157px;
+    width: 100%;
+    max-width: 157px;
     height:105px;
 }
 .events .conent--wrapper>.am-fl{
@@ -349,6 +351,7 @@ body{
     width:625px;
 }
 .events li{
+    width: 47%;
     margin:0 4.55% 4.55% 0;
 }
 .events li:nth-of-type(2n+2){

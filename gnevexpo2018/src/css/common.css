@@ -1,10 +1,10 @@
 @font-face {
     font-family: fangzheng01;
-    src:url("./fzltthjw.ttf?v=20180410");
-    src:url("./fzltthjw.woff?v=20180410") format('woff'),
-    url("./fzltthjw.ttf?v=20180410") format('truetype'),
-    url("./fzltthjw.svg?v=20180410") format('svg'),
-    url("./fzltthjw.eot?v=20180410") format('embedded-opentype');
+    src:url("./fzltthjw.ttf?v=20180703");
+    src:url("./fzltthjw.woff?v=20180703") format('woff'),
+    url("./fzltthjw.ttf?v=20180703") format('truetype'),
+    url("./fzltthjw.svg?v=20180703") format('svg'),
+    url("./fzltthjw.eot?v=20180703") format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -265,6 +265,11 @@ header .nav-list li:hover>.lastmeetingList{
 .goTop li:nth-of-type(2){
     background: #5b29ff;
 }
+.goTop li:nth-of-type(3){
+    background: #00f0d0;
+    margin-bottom:0;
+    transition: opacity 0.2s ease-in;
+}
 .goTop li:last-of-type{
     background: #00f0d0;
     margin-bottom:0;
@@ -277,7 +282,7 @@ header .nav-list li:hover>.lastmeetingList{
 .goTop li:nth-of-type(2):hover{
     background: #2e328e;
 }
-.goTop li:last-of-type:hover{
+.goTop li:last-of-type:hover,.goTop li:nth-of-type(3):hover{
     background: #00a598;
 }
 .goTop a{

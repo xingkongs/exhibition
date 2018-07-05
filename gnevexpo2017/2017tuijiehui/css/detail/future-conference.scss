@@ -1,0 +1,235 @@
+@charset 'utf-8';
+@import '../public/common';
+body{
+    background: #1a0a2c;
+    //background: #fff;
+    position: relative;
+}
+.futureTop{
+    position: fixed;
+    top:0px;
+    left:50%;
+    margin-left:-3.75rem;
+    width: 7.5rem;
+    height: 0.91rem;
+    background-size: cover;
+    z-index: 15;
+    a{
+        display: block;
+        float: left;
+        width: 1.5rem;
+        height: 0.6rem; 
+        margin:0.2rem 0.3rem 0rem 0.3rem;
+    }
+    .futureMenuBtn{
+        display: block;
+        float: right;
+        width: 0.36rem;
+        height: 0.32rem;
+        background-size: cover;
+        margin:0.32rem 0.3rem 0rem 0rem;
+    }
+}
+.rightMenu{
+    position: fixed;
+    bottom:2rem;
+    right: 8%;
+    height:2.4rem;
+    background-size: cover;
+    z-index: 12;
+    a{
+        display: block;
+        width: 1rem;
+        height:1rem;
+        background-size: cover;
+        margin:0rem 0rem 0.2rem 0rem;
+    }
+    .rightSign{
+        background-image: url(../../img/future_signup.png);
+    }
+    .gotop{
+        background-image: url(../../img/future_gotop.png);
+    }
+}
+.content {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-top: 0.91rem;
+    img{
+        width: 7.5rem;
+        height: auto;
+    }
+    .future_10_div{
+        width: 7.5rem;
+        height: 6.56rem;
+        background-size: cover;
+        background-image: url(../../img/future_10_bg.jpg);
+        padding:2.2rem 0rem 0rem 0rem;
+        text-align: center;
+        a{
+           display: block; 
+           width: 5.8rem;
+           height: 1rem;
+           line-height: 1rem;
+           text-align: center;
+           color: #000000;
+           font-weight: bold;
+           font-size: 16px;
+           margin:0 auto 0.3rem auto;
+        }
+    }
+    ul.futureContactCon{
+        width: 7.5rem;
+        height: 7.18rem;
+        background-size: cover;
+        background-image: url(../../img/future_16_bg.jpg);
+        padding-top:1.7rem;
+        li{
+            float: left;
+            width: 3.75rem;
+            text-align: center;
+            color: #fff;
+            padding:0.2rem 0rem 0.2rem 0rem;
+            span{
+               display: block;
+               font-size: 14px;
+               color: #fff;
+               line-height: 30px;
+               padding:0.1rem 0rem;
+            }
+            p{
+                font-size: 12px;
+                line-height: 20px;
+            }
+            a{
+                display: block;
+                font-size: 12px;
+                color: #fff;
+                line-height: 20px;
+            }
+        }
+    }
+}
+.routeTab{
+    overflow:hidden;
+    width:7.5rem;
+    position:relative;
+    margin:0 auto;
+    background-color: #1a0a2c;
+    .tabs{
+        position:relative;
+        height:30px;
+        padding-top:5px;
+        cursor:default;
+        width:7.5rem;
+        padding:0px 0.75rem;
+        .lava {
+           position:absolute;
+           top:0; 
+           left:0;
+           z-index:0;
+           display:block;
+           width:1rem;
+           height: 1rem;
+           margin:0rem 0.45rem;
+           background-size: cover;
+        }
+        span{
+           position:relative;
+           z-index:10;
+           float:left;
+           display:block;
+           width:1rem;
+           height: 1rem;
+           margin:0rem 0.5rem;
+           text-align:center;
+           background-size: cover;
+           transition: all 0.3s;
+        }
+        
+    }
+    .tabs span:nth-of-type(1){
+        background-image: url(../../img/tab_1.png);
+    }
+    .tabs span:nth-of-type(2){
+        background-image: url(../../img/tab_2.png);
+    }
+    .tabs span:nth-of-type(3){
+        background-image: url(../../img/tab_3.png);
+    }
+    .tabs span:nth-of-type(1).on{
+        background-image: url(../../img/tab_1_active.png);
+    }
+    .tabs span:nth-of-type(2).on{
+        background-image: url(../../img/tab_2_active.png);
+    }
+    .tabs span:nth-of-type(3).on{
+        background-image: url(../../img/tab_3_active.png);
+    }
+    .tabCon {
+        width: 100%;
+        position:relative;
+        overflow:hidden;
+        min-height: 7.2rem;
+        margin:0 auto;
+        padding:0.5rem 0.55rem;
+        img{
+            position: absolute;
+            top:0.4rem;
+            left:0.4rem;
+            height: 6.2rem;
+            width: 6.71rem;
+        }
+        .tabList{
+           width: 100%;
+           height: auto;
+           display: none;
+           color: #fff;
+           //transition: all 0.3s;
+           h3{
+               font-size: 0.28rem;
+               line-height: 0.48rem;
+               margin: 0.04rem;
+               font-weight: normal;
+           }
+           p{
+               font-size: 0.24rem;
+               line-height: 0.38rem;
+               color: #fbfbfb;
+           }
+        }
+    }
+}
+.futureMenuTc{
+    position: fixed;
+    width:7.5rem;
+    height: calc(100% -0.91rem);
+    background:rgba(0,0,0,0.6);
+    top:0.91rem;
+    left: 50%;
+    margin-left:-3.75rem;
+    z-index: 901;
+    display: none;
+}
+.futureMenuCon{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 0.3rem;
+    a{
+        display: block;
+        width: 7.5rem;
+        height: 0.75rem;
+        line-height: 0.75rem;
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+    }
+    a.on{
+       // background-color: #814bff;
+    }
+    a:hover{
+        //background-color: #814bff;
+    }
+}

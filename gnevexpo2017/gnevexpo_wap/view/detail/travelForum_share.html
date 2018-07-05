@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>2017全球新能源汽车大会未来出行论坛-第一电动网</title>
+    <meta name="keywords" content="未来出行论坛,未来汽车展,GNEV EXPO,未来汽车开发者大会,未来10年新能源汽车,未来新能源品牌汽车,上海未来新能源汽车,未来新能源汽车发展趋势,未来电动汽车续航">
+    <meta name="description" content="罗兰贝格携手第一电动深度解析汽车共享市场分析报告，2017未来出行上海论坛将举行，届时，与会嘉宾将共同讨论“汽车共享风口之变”。">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        a{
+            text-decoration:none;
+        }
+        .wrapped{
+            max-width:750px;
+            margin:0 auto;
+            background: #1669c3;
+        }
+        .wrapped_button{
+            line-height:50px;
+            width:100%;
+            text-align:center;
+            background:#a4c6f4;
+            max-width:750px;
+            position:fixed;
+            bottom:0;
+            font-size:20px;
+            color:#015abe;
+            font-weight:bold;
+        }
+        .img--wrapper img{
+            max-width:100%;
+        }
+        .gotop {
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-size: cover;
+            margin: 0 0 10px 0;
+            background-image: url(../../img/exhibition_gotop.png);
+        }
+        .rightMenu {
+            position: fixed;
+            bottom: 70px;
+            right: 8%;
+            height: 50px;
+            background-size: cover;
+            z-index: 12;
+        }
+        @media (min-width:640px) {
+            .gotop {
+                width: 100px;
+                height: 100px;
+                margin: 0 0 20px 0;
+            }
+            .wrapped_button{
+                line-height:100px;
+                font-size:30px;
+            }
+            .rightMenu {
+                position: fixed;
+                bottom: 150px;
+                right: 8%;
+                height: 50px;
+                background-size: cover;
+                z-index: 12;
+            }
+            .img--wrapper img{
+                margin-bottom:90px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="wrapped">
+    <div class="img--wrapper">
+        <img src="../../img/content2.png" alt="">
+    </div>
+    <a href="http://weitianren.wicp.net:13263/register2.aspx">
+        <div class="wrapped_button">报名参会</div>
+    </a>
+    <div class="rightMenu">
+        <a href="javascrpt:;" class="gotop" id="gotop"></a>
+    </div>
+</div>
+<script src="../../js/jquery.min.js" type="text/javascript"></script>
+<script async="async" src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script>
+    $('#gotop').click(function(){$('html,body').animate({scrollTop: '0'}, 800);});
+    $.ajax({
+        url: window.location.origin + '/upload/file/jssdk_signpackage',
+        type: 'POST',
+        dataType: 'json',
+        data: {'share_url': window.location.href},
+        success: function ($data){
+            if ($data.appId != undefined){
+                var shareData = {
+                    title: '2017全球新能源汽车大会未来出行论坛',
+                    desc: '罗兰贝格携手第一电动深度解析汽车共享市场分析报告，2017未来出行上海论坛将举行，届时，与会嘉宾将共同讨论“汽车共享风口之变”。',
+                    link: $data.url,
+                    imgUrl: window.location.origin + '/src/common/public/images/logo-app.jpg'
+                };
+                wx.config({
+                    debug: false,
+                    appId: $data.appId,
+                    timestamp: $data.timestamp,
+                    nonceStr: $data.nonceStr,
+                    signature: $data.signature,
+                    jsApiList: ['checkJsApi','onMenuShareTimeline','onMenuShareAppMessage','onMenuShareQQ','onMenuShareWeibo','onMenuShareQZone']
+                });
+                wx.ready(function () {
+                    wx.onMenuShareTimeline(shareData);
+                    wx.onMenuShareAppMessage(shareData);
+                    wx.onMenuShareQQ(shareData);
+                    wx.onMenuShareWeibo(shareData);
+                    wx.onMenuShareQZone(shareData);
+                });
+            }
+        }
+    });
+</script>
+<div id="footer-analysis-3rd" style="display: none;">
+    <script type="text/javascript" src="../../js/analysis.3rd.js"></script>
+</div>
+</body>
+</html>

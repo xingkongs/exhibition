@@ -1,0 +1,108 @@
+img.lazy {
+	opacity: 0;
+	/*transition: opacity 0.5s linear;
+	-webkit-transition: opacity 0.5s linear;*/
+}
+img.go_opacity {
+	opacity: 1 !important;
+}
+section#toast {
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	z-index: 999;
+	bottom: 20%;
+	padding: 5px 10px;
+	left: 50%;
+	-webkit-transform: translate(-50%, 0);
+	display: none;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 12px;
+}
+@-webkit-keyframes zhuan1 {
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+#m-load-container{
+    overflow: hidden;
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    top:0;
+    right:0;
+    bottom: 0;
+   background-color: rgba(255,255,255,0.6);
+}
+#m-load-container .loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: .4rem;
+    height: .4rem;
+    margin-top: -.2rem;
+    margin-left: -.2rem;
+    background-color: #df3031;
+    opacity: 1;
+    -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+    animation: rotateplane 1.2s infinite ease-in-out;
+}
+@-webkit-keyframes rotateplane{
+    0%{-webkit-transform:perspective(120px)}
+    50%{-webkit-transform:perspective(120px) rotateY(180deg)}
+    100%{-webkit-transform:perspective(120px) rotateY(180deg) rotateX(180deg)}}
+@keyframes rotateplane{
+    0%{-webkit-transform:perspective(120px) rotateX(0) rotateY(0);transform:perspective(120px) rotateX(0) rotateY(0)}
+    50%{-webkit-transform:perspective(120px) rotateX(-180.1deg) rotateY(0);transform:perspective(120px) rotateX(-180.1deg) rotateY(0)}
+    100%{-webkit-transform:perspective(120px) rotateX(-180deg) rotateY(-179.9deg);transform:perspective(120px) rotateX(-180deg) rotateY(-179.9deg)}
+}
+#navWrap{
+	position:fixed;
+	top:0;
+	left: 0;
+	z-index: 99;
+	width: 100%;
+	/*border-bottom: 1px solid rgba(0,0,0,0.2);*/
+}
+#navWrap:after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 1px;
+	transform: scaleY(0.5);
+	background-color: rgba(0,0,0,0.2);
+}
+#commonTitle{
+	height: 45px;
+	line-height: 45px;
+	background-color: white;
+	font-size: 18px;
+	color:#333;
+	position: relative;
+}
+#isLink{
+	color:#33333a;
+	position:absolute;
+	left: 0;
+	padding:0 12px 0 0.28rem;
+	font-size: 18px;
+}
+#isLink i{
+	font-size: 18px;
+}
+#isTxt{
+	position:absolute;
+	left: 45px;
+	right: 30px;
+	text-align: center;
+	top:0;
+}
+#placeDiv{
+	height:45px;
+	background: #f0f0f0;
+}
+.mui-preview-image.mui-fullscreen{
+	z-index:999;
+}

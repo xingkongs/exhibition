@@ -1,10 +1,10 @@
 @font-face {
     font-family: fangzheng01;
-    src:url("../../css/fzltthjw.ttf?v=20180410");
-    src:url("../../css/fzltthjw.woff?v=20180410") format('woff'),
-    url("../../css/fzltthjw.ttf?v=20180410") format('truetype'),
-    url("../../css/fzltthjw.svg?v=20180410") format('svg'),
-    url("../../css/fzltthjw.eot?v=20180410") format('embedded-opentype');
+    src:url("../../css/fzltthjw.ttf?v=20180703");
+    src:url("../../css/fzltthjw.woff?v=20180703") format('woff'),
+    url("../../css/fzltthjw.ttf?v=20180703") format('truetype'),
+    url("../../css/fzltthjw.svg?v=20180703") format('svg'),
+    url("../../css/fzltthjw.eot?v=20180703") format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -29,10 +29,14 @@
 a{
     text-decoration:none;
 }
+.main{
+    max-width:412px;
+}
 .wrapped{
-    max-width: 414px;
+    max-width: 100%;
     margin:0 5.3%;
 }
+
 .am-animation-fadeInUp{
     will-change:translate;
     animation-name: fadeInUp;
@@ -206,6 +210,11 @@ header .am-topbar-nav img{
 .goTop li:nth-of-type(2){
     background: #5b29ff;
 }
+.goTop li:nth-of-type(3){
+    background: #00f0d0;
+    margin-bottom:0;
+    transition: opacity 0.2s ease-in;
+}
 .goTop li:last-of-type{
     background: #00f0d0;
     margin-bottom:0;
@@ -218,7 +227,7 @@ header .am-topbar-nav img{
 .goTop li:nth-of-type(2):hover{
     background: #2e328e;
 }
-.goTop li:last-of-type:hover{
+.goTop li:last-of-type:hover,.goTop li:nth-of-type(3):hover{
     background: #00a598;
 }
 .goTop a{
@@ -275,6 +284,7 @@ header .am-topbar-nav img{
 .logo_title img{
     max-height:60px;
     min-width:260px;
+    max-width:100%;
 }
 section .logo_title{
     margin-left:-6%;

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" style="opacity: 0;">
+	<head>
+		<meta charset="utf-8">
+        <title>2017未来汽车开发者大会-路演项目报名-第一电动网</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <meta name="format-detection" content="email=no" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="renderer" content="webkit">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="wap-font-scale" content="no" />
+        <meta http-equiv="Cache-Control" content="no-siteapp" />
+        <script type="text/javascript">
+            window.location.href = "https://jinshuju.net/f/wXz0hs";
+        </script>
+        <script type="text/javascript" src="../../js/mobile-detect.min.js"></script>
+        <script type="text/javascript" src="../../js/wlh.js"></script>
+        <script src="../../js/change_view.js" type="text/javascript" charset="utf-8"></script>
+        <meta name="apple-mobile-web-app-title" content="">
+        <link rel="stylesheet" type="text/css" href="../../css/comm.css" />
+        <link rel="stylesheet" href="../../css/mui.min.css">
+		<link href="../../css/mui.picker.css" rel="stylesheet" />
+		<link href="../../css/mui.poppicker.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="../../css/detail/apply.css" />
+        <script src="../../js/jquery.min.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div id="content" class="content">
+			<div class="errTip" style="display: none;">
+				格式错误
+			</div>
+			<div class="navWrap">
+				<div class="commonTitle">
+					<a href="" class="isLink" id="isLink">
+						<img src="../../img/navArrow.png"/>
+					</a>
+					<span id="isTxt">路演项目报名</span>
+				</div>
+			</div>
+			<div class="navPlace"></div>
+			<div class="applyForm">
+				<input class="nameInput" type="text" name=""  value="" placeholder="联系人" maxlength='6' required="required"/>
+				<input class="phoneInput" id="phoneInput" placeholder="手机号" type="number" maxlength='11' required="required" pattern="[0-9]*" />
+				<input class="emailInput" type="email" name=""  value="" placeholder="邮箱" required="required" />
+				<input class="pj_name_Input" type="text" name=""  value="" placeholder="项目名称" required="required" />
+				<div class="listRow typeRow" id="showTypePicker">
+					<span id="typeResult"></span>
+					<p id="typeOld" style="color: #c8c8c8;">项目类别</p>
+					<img src="../../img/arrow_down.png"/>
+				</div>
+				<textarea class="pj_desc_Input" name="" rows="" cols="" placeholder="项目介绍（8-300字以内）" required="required"></textarea>
+				<!--<input type="file" class="fileInput" name="pj_bp"/>-->
+				<p class="info">注：商业计划书请发送邮箱至 sunqishen@d1ev.com</p>
+				<input type="submit" class="submitBtn" id="submitBtn" value="提交" />
+			</div>
+		</div>
+	</body>
+	<script src="../../js/common.js"></script>
+	<script src="../../js/mui.min.js"></script>
+	<script src="../../js/mui.picker.js"></script>
+	<script src="../../js/mui.poppicker.js"></script>
+	<script type="text/javascript">
+		var pj_type='';
+		var typeResult = document.getElementById('typeResult');
+		var typeOld = document.getElementById('typeOld');
+		(function($, doc) {
+			$.init();
+			$.ready(function() {
+				var actList=[{
+						value: '',
+						text: '新能源汽车'
+					}, {
+						value: '',
+						text: '智能化汽车'
+					}, {
+						value: '',
+						text: '轻量化设计'
+					}, {
+						value: '',
+						text: '汽车共享'
+					}];
+				var typePicker = new $.PopPicker();
+				typePicker.setData(actList);
+				var showTypePickerButton = doc.getElementById('showTypePicker');
+				showTypePickerButton.addEventListener('tap', function(event) {
+					typePicker.show(function(items) {
+						typeResult.innerText = items[0].text;
+						pj_type=items[0].text;
+						typeOld.style.display='none';
+					});
+				}, false);
+			});
+		})(mui, document);
+		$(function () {
+        	document.getElementById("isLink").addEventListener('click',function(ev){
+				ev.preventDefault();
+				document.referrer == '' ?window.location.href = 'developerPlan.html' :window.history.go(-1);
+			},false)
+        	var nameVal=$('.nameInput').val();
+        	var telVal=$('.phoneInput').val();
+        	var emailVal=$('.emailInput').val();
+        	var pj_name=$('.pj_name_Input').val();
+        	var pj_desc=$('.pj_desc_Input').val();
+        	var testphone=/^1[1-9]{1}\d{9}$/;
+        	var testEmail=/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+        	$(".nameInput").on("input",function(){
+				nameVal=this.value;
+			});
+			$(".phoneInput").on("input",function(){
+				telVal=this.value;
+				var maxChars1 =11;
+			    if (telVal.length > maxChars1){
+			       this.value = this.value.substring(0,maxChars1);
+			       telVal=this.value;
+			    }
+			});
+			$(".emailInput").on("input",function(){
+				emailVal=this.value;
+			});
+			$(".pj_name_Input").on("input",function(){
+				pj_name=this.value;
+				var maxChars1 =20;
+			    if (pj_name.length > maxChars1){
+			       this.value = this.value.substring(0,maxChars1);
+			       pj_name=this.value;
+			    }
+			});
+			/*$(".pj_type_Input").on("input",function(){
+				pj_type=this.value;
+			});*/
+			$(".pj_desc_Input").on("input",function(){
+				pj_desc=this.value;
+				var maxChars1 =300;
+			    if (pj_desc.length > maxChars1){
+			       this.value = this.value.substring(0,maxChars1);
+			       pj_desc=this.value;
+			    }
+			});
+        	function checkValue(){
+				if(nameVal==''){
+					$('.errTip').html('请输入联系人')
+					$('.errTip').slideDown();
+        			setTimeout(function(){
+						$('.errTip').slideUp();
+					},2000)
+					return false;
+				}
+				if(nameVal.length>=7||nameVal.length<2){
+					$('.errTip').html(' 请输入2-6个字以内联系人姓名')
+					$('.errTip').slideDown();
+        			setTimeout(function(){
+						$('.errTip').slideUp();
+					},2000)
+					return false;
+				}
+				if(telVal==''){
+					$('.errTip').html('请输入手机号')
+					$('.errTip').slideDown();
+        			setTimeout(function(){
+						$('.errTip').slideUp();
+					},2000)
+					return false;
+				}
+				if(!testphone.test(telVal)){
+					$('.errTip').html('请输入11位手机号，只能是数字')
+					$('.errTip').slideDown();
+        			setTimeout(function(){
+						$('.errTip').slideUp();
+					},2000)
+					return false;
+				}
+				if(emailVal==''){
+					$('.errTip').html('请输入邮箱')
+					$('.errTip').slideDown();
+        			setTimeout(function(){
+						$('.errTip').slideUp();
+					},2000)
+					return false;
+				}
+				if(!testEmail.test(emailVal)){
+					$('.errTip').html('请输入正确格式的邮箱')
+					$('.errTip').slideDown();
+        			setTimeout(function(){
+						$('.errTip').slideUp();
+					},2000)
+					return false;
+				}
+				if(pj_name==''){
+					$('.errTip').html('请输入项目名称')
+					$('.errTip').slideDown();
+        			setTimeout(function(){
+						$('.errTip').slideUp();
+					},2000)
+					return false;
+				}
+				if(pj_name.length>20||pj_name.length<2){
+					$('.errTip').html('请输入2-20字项目名称')
+					$('.errTip').slideDown();
+        			setTimeout(function(){
+						$('.errTip').slideUp();
+					},2000)
+					return false;
+				}
+				if(pj_type==''){
+					$('.errTip').html('请输入项目类别')
+					$('.errTip').slideDown();
+        			setTimeout(function(){
+						$('.errTip').slideUp();
+					},2000)
+					return false;
+				}
+				if(pj_desc==''){
+					$('.errTip').html('请输入项目简介')
+					$('.errTip').slideDown();
+        			setTimeout(function(){
+						$('.errTip').slideUp();
+					},2000)
+					return false;
+				}
+				if(pj_desc.length>300||pj_desc.length<8){
+					$('.errTip').html('请输入8-300字项目简介')
+					$('.errTip').slideDown();
+        			setTimeout(function(){
+						$('.errTip').slideUp();
+					},2000)
+					return false;
+				}
+				$.ajax({
+					url: 'http://www.d1ev.com/contents/baoming/formsubmit',
+					type: 'post',
+					data: {
+						'type':3,
+						'istel':1,
+						'realname':nameVal,
+						'tel':telVal,
+						'email':emailVal,
+						'pj_name':pj_name,
+						'pj_type':pj_type,
+						'pj_desc':pj_desc
+					},
+					async:false,
+					success: function(data) {
+						console.log(data);
+						if (data.errcode>0) {
+							console.log(data.errcode);
+							$('.errTip').html(data.errmsg);
+							$('.errTip').slideDown();
+		        			setTimeout(function(){
+								$('.errTip').slideUp();
+							},2000)
+						}else {
+							setTimeout(function(){
+								$('body').css('overflow','hidden');
+					   			confirm("报名提交成功！",["知道了"],function(){
+									$('body').css('overflow','auto');
+									window.location.href='developerPlan.html';
+								},function(){
+									$('body').css('overflowY','auto');
+								})
+							},500);
+						}
+					},
+					dataType: 'json'
+				});
+			}
+			$('#submitBtn').click(function(){
+				checkValue();
+			});
+        	
+		});
+	   
+	</script>
+	<div id="footer-analysis-3rd" style="display: none;">
+        <script type="text/javascript" src="../../js/analysis.3rd.js"></script>
+    </div>
+</html>

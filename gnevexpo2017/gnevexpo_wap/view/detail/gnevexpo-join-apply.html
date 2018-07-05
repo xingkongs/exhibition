@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" style="opacity: 0;">
+	<head>
+		<meta charset="utf-8">
+        <title>2017全球新能源汽车大会未来汽车展（GNEV EXPO）-参展报名-第一电动网</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <meta name="format-detection" content="email=no" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="renderer" content="webkit">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="wap-font-scale" content="no" />
+        <meta http-equiv="Cache-Control" content="no-siteapp" />
+        <script type="text/javascript">
+            //window.location.href = "https://jinshuju.net/f/ZgMHvE";
+        </script>
+        <script type="text/javascript" src="../../js/mobile-detect.min.js"></script>
+        <script type="text/javascript" src="../../js/wlh.js"></script>
+        <script src="../../js/change_view.js" type="text/javascript" charset="utf-8"></script>
+        <meta name="apple-mobile-web-app-title" content="">
+        <link rel="stylesheet" type="text/css" href="../../css/comm.css" />
+        <link rel="stylesheet" type="text/css" href="../../css/detail/apply.css" />
+        <script src="../../js/jquery.min.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div id="content" class="content exhibitionContent">
+			<div class="errTip" style="display: none;">
+				格式错误
+			</div>
+			<div class="navWrap">
+				<div class="commonTitle">
+					<a href="" class="isLink" id="isLink">
+						<img src="../../img/navArrow2.png"/>
+					</a>
+					<span id="isTxt">参展报名</span>
+				</div>
+			</div>
+			<div class="navPlace"></div>
+			<div class="applyForm">
+				<input class="nameInput" type="text" name=""  value="" placeholder="联系人" maxlength='6' />
+				<input class="phoneInput" id="phoneInput" placeholder="手机号" type="number" maxlength='11' pattern="[0-9]*" />
+				<input class="emailInput" type="email" name=""  value="" placeholder="邮箱"/>
+				<input class="companyInput" type="text" name=""  value="" placeholder="公司名称" minlength='2' maxlength='64' />
+				<input class="positionInput" type="text" name=""  value="" placeholder="职务" minlength='2' maxlength='32' />
+				<input class="productInput" type="text" name=""  value="" placeholder="展示的产品或服务" minlength='2' />
+				<input class="areaInput" type="number" min="9" max="100" name="" value="" placeholder="占位大小（最小9平米）"  />
+				<input class="websiteInput" type="text" name=""  value="" placeholder="公司网站：http://"  />
+				<input type="submit" class="submitBtn" id="submitBtn" value="提交" />
+			</div>
+		</div>
+		<div class="last">
+			
+		</div>
+	</body>
+	<script src="../../js/common.js"></script>
+	<script type="text/javascript">
+		$(function () {
+        	document.getElementById("isLink").addEventListener('click',function(ev){
+				ev.preventDefault();
+				document.referrer == '' ?window.location.href = 'exhibition.html' :window.history.go(-1);
+			},false)
+        	var nameVal=$('.nameInput').val();
+        	var telVal=$('.phoneInput').val();
+        	var emailVal=$('.emailInput').val();
+        	var companyVal=$('.companyInput').val();
+        	var positionVal=$('.positionInput').val();
+        	var productVal=$('.productInput').val();
+        	var areaVal=$('.areaInput').val();
+        	var websiteVal=$('.websiteInput').val();
+        	var testwebsite=/^([hH][tT]{2}[pP]:\/\/|[hH][tT]{2}[pP][sS]:\/\/)?(([A-Za-z0-9-~]+)\.)+([A-Za-z0-9-~\/])+$/;
+        	var testphone=/^1[1-9]{1}\d{9}$/;
+        	var testEmail=/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+        	$(".nameInput").on("input",function(){
+				nameVal=this.value;
+			});
+			$(".phoneInput").on("input",function(){
+				telVal=this.value;
+				var maxChars1 =11;
+			    if (telVal.length > maxChars1){
+			       this.value = this.value.substring(0,maxChars1);
+			       telVal=this.value;
+			    }
+			});
+			$(".emailInput").on("input",function(){
+				emailVal=this.value;
+			});
+			$(".companyInput").on("input",function(){
+				companyVal=this.value;
+			});
+			$(".positionInput").on("input",function(){
+				positionVal=this.value;
+				var maxChars1 =10;
+			    if (positionVal.length > maxChars1){
+			       this.value = this.value.substring(0,maxChars1);
+			       positionVal=this.value;
+			    }
+			});
+			$(".productInput").on("input",function(){
+				productVal=this.value;
+			});
+			$(".areaInput").on("input",function(){
+				areaVal=this.value;
+			});
+			$(".websiteInput").on("input",function(){
+				websiteVal=this.value;
+			});
+        	function checkValue(){
+        		if(!testwebsite.test(websiteVal)){
+					$('.errTip').html('请输入正确格式的网址')
+					$('.errTip').slideDown();
+        			setTimeout(function(){
+						$('.errTip').slideUp();
+					},2000)
+					return false;
+				}
+				if(nameVal==''){
+					$('.errTip').html('请输入联系人')
+					$('.errTip').slideDown();
+        			setTimeout(function(){
+						$('.errTip').slideUp();
+					},2000)
+					return false;
+				}
+				if(nameVal.length>=7||nameVal.length<2){
+					$('.errTip').html(' 联系人姓名请控制在2-6个字以内')
+					$('.errTip').slideDown();
+        			setTimeout(function(){
+						$('.errTip').slideUp();
+					},2000)
+					return false;
+				}
+				if(telVal==''){
+					$('.errTip').html('请输入手机号')
+					$('.errTip').slideDown();
+        			setTimeout(function(){
+						$('.errTip').slideUp();
+					},2000)
+					return false;
+				}
+				if(!testphone.test(telVal)){
+					$('.errTip').html('请输入11位手机号，只能是数字')
+					$('.errTip').slideDown();
+        			setTimeout(function(){
+						$('.errTip').slideUp();
+					},2000)
+					return false;
+				}
+				if(emailVal==''){
+					$('.errTip').html('请输入邮箱')
+					$('.errTip').slideDown();
+        			setTimeout(function(){
+						$('.errTip').slideUp();
+					},2000)
+					return false;
+				}
+				if(!testEmail.test(emailVal)){
+					$('.errTip').html('请输入正确格式的邮箱')
+					$('.errTip').slideDown();
+        			setTimeout(function(){
+						$('.errTip').slideUp();
+					},2000)
+					return false;
+				}
+				if(companyVal==''){
+					$('.errTip').html('请输入公司')
+					$('.errTip').slideDown();
+        			setTimeout(function(){
+						$('.errTip').slideUp();
+					},2000)
+					return false;
+				}
+				if(companyVal.length>20||companyVal.length<2){
+					$('.errTip').html('请输入2-20字的公司名')
+					$('.errTip').slideDown();
+        			setTimeout(function(){
+						$('.errTip').slideUp();
+					},2000)
+					return false;
+				}
+				if(positionVal==''){
+					$('.errTip').html('请输入职务')
+					$('.errTip').slideDown();
+        			setTimeout(function(){
+						$('.errTip').slideUp();
+					},2000)
+					return false;
+				}
+				if(positionVal.length>10||positionVal.length<2){
+					$('.errTip').html('请输入2-10字的职务')
+					$('.errTip').slideDown();
+        			setTimeout(function(){
+						$('.errTip').slideUp();
+					},2000)
+					return false;
+				}
+				if(productVal==''){
+					$('.errTip').html('请输入展示的产品或服务')
+					$('.errTip').slideDown();
+        			setTimeout(function(){
+						$('.errTip').slideUp();
+					},2000)
+					return false;
+				}
+				if(areaVal==''){
+					$('.errTip').html('请输入占位大小')
+					$('.errTip').slideDown();
+        			setTimeout(function(){
+						$('.errTip').slideUp();
+					},2000)
+					return false;
+				}
+				if(areaVal<9){
+					$('.errTip').html('请输入占位大小最小9平米')
+					$('.errTip').slideDown();
+        			setTimeout(function(){
+						$('.errTip').slideUp();
+					},2000)
+					return false;
+				}
+				if(websiteVal==''){
+					$('.errTip').html('请输入公司网址')
+					$('.errTip').slideDown();
+        			setTimeout(function(){
+						$('.errTip').slideUp();
+					},2000)
+					return false;
+				}
+				if(!testwebsite.test(websiteVal)){
+					$('.errTip').html('请输入正确格式的网址')
+					$('.errTip').slideDown();
+        			setTimeout(function(){
+						$('.errTip').slideUp();
+					},2000)
+					return false;
+				}
+				$.ajax({
+					url: 'http://www.d1ev.com/index.php?g=contents&m=jiaoyihui&a=zhanshang',
+					type: 'post',
+					data: {
+						'istel':1,
+						'realname':nameVal,
+						'tel':telVal,
+						'email':emailVal,
+						'company':companyVal,
+						'job':positionVal,
+						'product':productVal,
+						'area':areaVal,
+						'url':websiteVal
+					},
+					async:false,
+					dataType: 'text',
+					success: function(data) {
+						console.log(data);
+						if(data.indexOf("成功") > 0){
+							setTimeout(function(){
+								$('body').css('overflow','hidden');
+					   			confirm("报名提交成功！",["知道了"],function(){
+									$('body').css('overflow','auto');
+									window.location.href='exhibition.html';
+								},function(){
+									$('body').css('overflowY','auto');
+								})
+							},500);
+						}
+					}
+				});
+			}
+			$('#submitBtn').click(function(){
+				checkValue();
+			});
+        	
+		});
+	   
+	</script>
+	<div id="footer-analysis-3rd" style="display: none;">
+        <script type="text/javascript" src="../../js/analysis.3rd.js"></script>
+    </div>
+</html>

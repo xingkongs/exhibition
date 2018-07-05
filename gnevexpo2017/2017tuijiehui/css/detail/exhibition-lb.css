@@ -1,0 +1,597 @@
+.deleteLayer {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 995;
+  display: none; }
+  .deleteLayer .deleteWrap {
+    width: 6rem;
+    text-align: center;
+    height: auto;
+    background-color: #fff;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-height: 100%; }
+    .deleteLayer .deleteWrap select {
+      border: 1px solid #ccc !important;
+      width: 5rem;
+      height: auto;
+      margin: 30px auto 10px  auto;
+      font-size: 14px;
+      min-height: 40px; }
+    .deleteLayer .deleteWrap input.deleteReason {
+      width: 5rem;
+      height: 40px;
+      line-height: 40px;
+      border: 1px solid #ccc !important; }
+    .deleteLayer .deleteWrap .btnsBox {
+      width: 100%;
+      margin: 20px auto;
+      text-align: center;
+      overflow: hidden; }
+      .deleteLayer .deleteWrap .btnsBox span {
+        display: inline-block;
+        border: 1px solid #ccc;
+        padding: 2px 10px;
+        margin: 0px 50px 20px 50px; }
+
+.layerWrap {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 995;
+  display: none; }
+  .layerWrap span {
+    position: absolute;
+    bottom: 1.2rem;
+    left: 50%;
+    display: block;
+    width: 6.14rem;
+    height: 0.9rem;
+    margin-left: -3.07rem;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 0.9rem;
+    color: #0002fe;
+    font-size: 18px; }
+  .layerWrap span.cancleBtn {
+    bottom: 0.15rem; }
+
+.layerWrap2 {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 995;
+  display: none; }
+  .layerWrap2 .layerBox {
+    width: 7.5rem;
+    height: 4rem;
+    position: absolute;
+    bottom: 0rem;
+    left: 50%;
+    margin-left: -3.75rem;
+    background-color: #fff; }
+    .layerWrap2 .layerBox ul {
+      width: 100%;
+      height: auto;
+      padding: 0.4rem 1.35rem 0.2rem 1.35rem;
+      border-bottom: 1px solid #e3e3e3;
+      overflow: hidden; }
+      .layerWrap2 .layerBox ul li {
+        width: 1.6rem;
+        height: auto;
+        padding: 0.3rem 0.3rem;
+        float: left; }
+        .layerWrap2 .layerBox ul li span {
+          display: inline-block;
+          width: 0.98rem;
+          height: 0.98rem;
+          border-radius: 100%;
+          line-height: 0.98rem;
+          background-color: #f2f3f6;
+          text-align: center;
+          font-size: 14px;
+          color: #565656; }
+        .layerWrap2 .layerBox ul li p {
+          width: 100%;
+          text-align: center;
+          font-size: 12px;
+          color: #565656;
+          padding: 0.2rem 0rem; }
+      .layerWrap2 .layerBox ul li.selected span {
+        background-color: #ff6600;
+        color: #fff; }
+    .layerWrap2 .layerBox span.cancleBtn {
+      position: absolute;
+      left: 50%;
+      display: block;
+      width: 7.5rem;
+      height: 0.98rem;
+      margin-left: -3.75rem;
+      background-color: #fff;
+      text-align: center;
+      line-height: 0.98rem;
+      color: #ff6600;
+      font-size: 16px; }
+
+body {
+  background: #fff;
+  position: relative; }
+
+.futureTop {
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  margin-left: -3.75rem;
+  width: 7.5rem;
+  height: 0.91rem;
+  z-index: 15;
+  background: #fff;
+  padding: 0.1rem 0.3rem;
+  border-bottom: 1px solid #e3e3e3;
+  background-color: #fff; }
+  .futureTop a {
+    width: 5.05rem;
+    height: 0.7rem;
+    float: left; }
+  .futureTop img {
+    width: 5.05rem;
+    height: 0.7rem;
+    float: left; }
+  .futureTop .futureMenuBtn {
+    display: block;
+    float: right;
+    width: 0.57rem;
+    height: 0.51rem;
+    background-size: cover;
+    margin: 0.2rem 0rem 0rem 0rem; }
+
+.futureMenuTc {
+  position: fixed;
+  width: 7.5rem;
+  height: calc(100% -0.91rem);
+  background: rgba(255, 255, 255, 0.99);
+  top: 0.91rem;
+  left: 50%;
+  margin-left: -3.75rem;
+  z-index: 901;
+  display: none; }
+
+.futureMenuCon {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding-bottom: 0.1rem; }
+  .futureMenuCon a {
+    display: block;
+    width: 7.5rem;
+    height: 0.75rem;
+    line-height: 0.75rem;
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+    border-bottom: 1px solid #e3e3e3; }
+
+.rightMenu {
+  position: fixed;
+  bottom: 2rem;
+  right: 8%;
+  height: 2.4rem;
+  background-size: cover;
+  z-index: 12; }
+  .rightMenu a {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    background-size: cover;
+    margin: 0rem 0rem 0.2rem 0rem; }
+  .rightMenu .rightSign {
+    background-image: url(../../img/exhibition_signup.png); }
+  .rightMenu .gotop {
+    background-image: url(../../img/exhibition_gotop.png); }
+
+.exhibitionActCon1 {
+  width: 100%;
+  height: 7.5rem;
+  background-color: #f2f3f6;
+  text-align: center;
+  font-size: 14px; }
+  .exhibitionActCon1 .swiper-containe2 {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .exhibitionActCon1 .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px; }
+  .exhibitionActCon1 .imgTitle {
+    display: block;
+    width: 1.85rem;
+    height: 0.8rem;
+    margin: 0.4rem auto; }
+  .exhibitionActCon1 .swiper-wrapper a.listBox {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 6.9rem;
+    height: 7.5rem;
+    background-color: #fff; }
+    .exhibitionActCon1 .swiper-wrapper a.listBox .imgTop {
+      display: block;
+      width: 6.9rem;
+      height: 3.4rem;
+      background-size: cover; }
+    .exhibitionActCon1 .swiper-wrapper a.listBox span {
+      display: block;
+      padding: 0.2rem 0.2rem;
+      font-size: 18px;
+      color: #000;
+      text-align: left; }
+    .exhibitionActCon1 .swiper-wrapper a.listBox p {
+      padding: 0rem 0.2rem 0.2rem 0.2rem;
+      text-align: justify;
+      color: #666;
+      white-space: normal;
+      line-height: 24px;
+      font-size: 14px; }
+
+.content {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding-top: 0.91rem;
+  /*banner*/ }
+  .content img {
+    width: 7.5rem;
+    height: auto; }
+  .content .exhibitionTop {
+    width: 7.5rem;
+    height: 9.88rem;
+    position: relative;
+    background: url(../../img/exhibition_4.jpg) no-repeat bottom center;
+    background-size: 7.5rem 4.88rem; }
+    .content .exhibitionTop .exhibitionTxtCon {
+      position: relative;
+      height: 4.88rem;
+      width: 7.5rem;
+      font-size: 14px;
+      color: #666666;
+      line-height: 24px;
+      padding: 1.4rem 0.4rem 0rem 0.4rem;
+      text-align: justify; }
+  .content .bannerArea {
+    width: 7.5rem;
+    height: 5.6rem;
+    position: relative; }
+    .content .bannerArea img {
+      width: 7.5rem;
+      height: 5rem; }
+    .content .bannerArea .swiper-container .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff; }
+      .content .bannerArea .swiper-container .swiper-slide img {
+        width: 7.5rem;
+        height: 5rem; }
+    .content .bannerArea .swiper-pagination-bullet {
+      width: 15px;
+      height: 2px;
+      border-radius: 0px;
+      background-color: #bc9fd4;
+      transition: all 0.3s; }
+    .content .bannerArea .swiper-pagination-bullet-active {
+      width: 12px;
+      height: 12px;
+      border-radius: 100%;
+      border: 2px solid #93278f;
+      background-color: transparent;
+      position: relative;
+      top: 3px; }
+  .content .swiper-container-horizontal > .swiper-pagination {
+    bottom: 0px;
+    width: 7.5rem;
+    left: 50%;
+    margin-left: -3.75rem;
+    color: #fff;
+    font-size: 14px;
+    z-index: 20; }
+  .content .exhibitionActCon {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #f2f3f6;
+    text-align: center; }
+    .content .exhibitionActCon .imgTitle {
+      display: block;
+      width: 1.85rem;
+      height: 0.8rem;
+      margin: 0.4rem auto; }
+    .content .exhibitionActCon .exhibitionList {
+      width: 100%;
+      overflow: hidden;
+      height: auto;
+      overflow-x: auto;
+      white-space: nowrap;
+      padding-left: 0.3rem; }
+      .content .exhibitionActCon .exhibitionList a.listBox {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+        width: 6rem;
+        height: 7.5rem;
+        margin: 0rem 0.3rem 0.2rem 0rem;
+        background-color: #fff; }
+        .content .exhibitionActCon .exhibitionList a.listBox .imgTop {
+          display: block;
+          width: 6rem;
+          height: 3rem;
+          background-size: cover; }
+        .content .exhibitionActCon .exhibitionList a.listBox span {
+          display: block;
+          padding: 0.2rem 0.2rem;
+          font-size: 18px;
+          color: #000;
+          text-align: left; }
+        .content .exhibitionActCon .exhibitionList a.listBox p {
+          padding: 0rem 0.2rem 0.2rem 0.2rem;
+          text-align: justify;
+          color: #666;
+          white-space: normal;
+          line-height: 24px; }
+  .content .exhibitionApplyCon {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #fff;
+    text-align: center;
+    padding: 0.2rem 0rem 0.4rem 0.3rem; }
+    .content .exhibitionApplyCon .imgTitle {
+      display: block;
+      width: 1.85rem;
+      height: 0.8rem;
+      margin: 0.5rem auto; }
+    .content .exhibitionApplyCon .applyRow {
+      display: block;
+      width: 3.3rem;
+      height: 1.3rem;
+      float: left;
+      background-color: #5F117C;
+      border-radius: 5px;
+      margin: 0rem 0.3rem 0.3rem 0rem;
+      text-align: center; }
+      .content .exhibitionApplyCon .applyRow i {
+        display: block;
+        width: 0.66rem;
+        height: 0.5rem;
+        background-size: cover;
+        margin: 0.15rem auto; }
+      .content .exhibitionApplyCon .applyRow .applyI {
+        width: 0.41rem;
+        height: 0.5rem; }
+      .content .exhibitionApplyCon .applyRow span {
+        display: block;
+        color: #fff;
+        font-size: 15px; }
+    .content .exhibitionApplyCon .downloadFile {
+      display: block;
+      width: 6.9rem;
+      height: 0.8rem;
+      line-height: 0.8rem;
+      font-size: 15px;
+      color: #5F117C;
+      border: 1px solid #5F117C;
+      border-radius: 4px;
+      margin-bottom: 0.3rem;
+      clear: both; }
+  .content .exScheduleCon {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #f2f3f6;
+    text-align: center;
+    padding: 0 0.3rem; }
+    .content .exScheduleCon .imgTitle {
+      display: block;
+      width: 1.85rem;
+      height: 0.8rem;
+      margin: 0.4rem auto; }
+    .content .exScheduleCon h3 {
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      color: #fff;
+      font-size: 15px;
+      background-color: #5e5e5e;
+      letter-spacing: 1px; }
+    .content .exScheduleCon .scheduleRow {
+      width: 100%;
+      text-align: left;
+      background-color: #fff;
+      padding: 0.3rem 0.3rem;
+      overflow: hidden;
+      margin-top: 0.3rem; }
+      .content .exScheduleCon .scheduleRow p {
+        width: 100%; }
+        .content .exScheduleCon .scheduleRow p i {
+          float: left;
+          width: 0.32rem;
+          height: 0.3rem;
+          background-size: cover;
+          margin: 0.05rem 0.2rem 0.2rem 0rem;
+          background-image: url(../../img/exhibition_16.jpg); }
+        .content .exScheduleCon .scheduleRow p span {
+          float: left;
+          color: #956FB2;
+          font-size: 15px; }
+      .content .exScheduleCon .scheduleRow .span1 {
+        display: block;
+        color: #5F117C;
+        clear: both;
+        font-size: 16px; }
+    .content .exScheduleCon .scheduleList {
+      width: 100%;
+      text-align: left;
+      background-color: #fff;
+      padding: 0.3rem 0.3rem;
+      overflow: hidden;
+      text-align: left;
+      margin-bottom: 0.3rem; }
+      .content .exScheduleCon .scheduleList li {
+        width: 100%;
+        overflow: hidden;
+        border-bottom: 1px solid #e3e3e3;
+        padding: 0.3rem 0rem; }
+        .content .exScheduleCon .scheduleList li p {
+          width: 100%; }
+          .content .exScheduleCon .scheduleList li p i {
+            float: left;
+            width: 0.32rem;
+            height: 0.3rem;
+            background-size: cover;
+            margin: 0.05rem 0.2rem 0.2rem 0rem;
+            background-image: url(../../img/exhibition_16_1.jpg); }
+          .content .exScheduleCon .scheduleList li p span {
+            float: left;
+            color: #999999;
+            font-size: 15px; }
+        .content .exScheduleCon .scheduleList li .span1 {
+          display: block;
+          color: #565656;
+          clear: both;
+          font-size: 16px; }
+  .content .exGusetCon {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 0.2rem; }
+    .content .exGusetCon .imgTitle {
+      display: block;
+      width: 1.85rem;
+      height: 0.8rem;
+      margin: 0.4rem auto; }
+  .content .exContactCon {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #fff;
+    padding-top: 0.2rem;
+    padding: 0.2rem 0.3rem; }
+    .content .exContactCon .imgTitle {
+      display: block;
+      width: 1.85rem;
+      height: 0.8rem;
+      margin: 0.4rem auto; }
+    .content .exContactCon p {
+      color: #808080;
+      padding: 0.3rem 0rem;
+      font-size: 14px; }
+      .content .exContactCon p img {
+        width: 0.4rem;
+        height: 0.4rem;
+        margin-right: 0.2rem; }
+    .content .exContactCon a {
+      display: block;
+      color: #808080;
+      font-size: 14px; }
+      .content .exContactCon a img {
+        width: 0.4rem;
+        height: 0.4rem;
+        margin-right: 0.2rem; }
+
+.routeTab {
+  overflow: hidden;
+  width: 6.9rem;
+  position: relative;
+  background-color: #f2f3f6;
+  margin: 0rem 0.3rem;
+  padding: 0.4rem 0rem 0.5rem 0rem; }
+  .routeTab .tabs {
+    position: relative;
+    height: 30px;
+    padding-top: 5px;
+    cursor: default;
+    width: 7.5rem;
+    padding: 0px 0.75rem; }
+    .routeTab .tabs .lava {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      margin: 0rem 0.45rem;
+      background-size: cover; }
+    .routeTab .tabs span {
+      position: relative;
+      z-index: 10;
+      float: left;
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      margin: 0rem 0.5rem;
+      text-align: center;
+      background-size: cover;
+      transition: all 0.3s; }
+  .routeTab .tabs span:nth-of-type(1) {
+    background-image: url(../../img/ex_tab_1.png); }
+  .routeTab .tabs span:nth-of-type(2) {
+    background-image: url(../../img/ex_tab_2.png); }
+  .routeTab .tabs span:nth-of-type(3) {
+    background-image: url(../../img/ex_tab_3.png); }
+  .routeTab .tabs span:nth-of-type(1).on {
+    background-image: url(../../img/ex_tab_1_active.png); }
+  .routeTab .tabs span:nth-of-type(2).on {
+    background-image: url(../../img/ex_tab_2_active.png); }
+  .routeTab .tabs span:nth-of-type(3).on {
+    background-image: url(../../img/ex_tab_3_active.png); }
+  .routeTab .tabCon {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    min-height: 7.2rem;
+    margin: 0 auto;
+    padding: 0.5rem 0.3rem; }
+    .routeTab .tabCon img {
+      position: absolute;
+      top: 0.4rem;
+      left: 0.4rem;
+      height: 6.2rem;
+      width: 6.71rem; }
+    .routeTab .tabCon .tabList {
+      width: 100%;
+      height: auto;
+      display: none;
+      color: #565656; }
+      .routeTab .tabCon .tabList h3 {
+        font-size: 15px;
+        line-height: 28px;
+        margin: 0.1rem 0rem 0.5rem 0rem;
+        font-weight: normal; }
+      .routeTab .tabCon .tabList p {
+        font-size: 14px;
+        line-height: 24px;
+        color: #565656;
+        margin-bottom: 0.5rem; }
+
+/*# sourceMappingURL=exhibition-lb.css.map */

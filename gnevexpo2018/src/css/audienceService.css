@@ -89,7 +89,7 @@
 }
 .transportation .table--wrapper .img--wrapper{
     height:369px;
-    background: url("../images/xieyijiudian.png") no-repeat;
+    background: url("../images/xieyijiudian.png?v=20180518a") no-repeat;
     background-size: contain;
 }
 .transportation p.table_tip{
